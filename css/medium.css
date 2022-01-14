@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em){
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 2em;
+  }
+  header, footer {
+    background-color: #077a54;
+    color: #f8f6f1;
+  }
+  footer {
+    padding-top: 1em;
+  }
+  h1 {
+    padding-left: 0.3em;
+  }
+}
