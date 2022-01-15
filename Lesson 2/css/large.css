@@ -2,6 +2,10 @@
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  header, footer, main {
+    max-width: 75rem;
+    margin: auto;
+  }
   #c3 {
     grid-column: 3 / 4;
   }
