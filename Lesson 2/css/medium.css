@@ -1,0 +1,13 @@
+@media only screen and (min-width: 600px){
+
+  main {
+    clear: both;
+    column-count: 2;
+    column-rule: 2px solid yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #c3 {
+    grid-column: 1 / 3;
+  }
+}

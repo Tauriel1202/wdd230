@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1028px){
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #c3 {
+    grid-column: 3 / 4;
+  }
+}
