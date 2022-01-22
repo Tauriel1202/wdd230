@@ -1,0 +1,36 @@
+@media only screen and (min-width: 32.5em) {
+  body {
+    max-width: 767px;
+    margin: auto;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    width: 25%;
+  }
+  nav a {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+  }
+  /* .colorNames {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+  } */
+  .colorNames {
+    display: none;
+  }
+  table {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+  .mbground, .mtext, .nav, .hover, .focus {
+    width: 20.5%;
+    height: 5em;
+  }
+}

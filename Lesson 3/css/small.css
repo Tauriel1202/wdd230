@@ -1,0 +1,120 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+table {
+  display: none;
+}
+header,
+main,
+footer {
+  margin: auto;
+  text-align: center;
+  font-family: "Catamaran", sans-serif;
+}
+h1,
+h2,
+footer {
+  background-image: linear-gradient(
+    180deg,
+    #fff,
+    #c5e7f5,
+    #5cc8ff,
+    #0ac6ff,
+    #05acff
+  );
+  padding: 0.3rem;
+}
+h1,
+h2,
+h3,
+footer {
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.2em;
+}
+h1 {
+  font-size: 1.5em;
+}
+nav {
+  background-color: #f764b7;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  padding: 1em;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 2em;
+}
+nav li:hover {
+  background-image: linear-gradient(90deg, #fff, #fcff5c, #fff);
+}
+nav li.active {
+  background-color: #65e77f;
+  color: #fff;
+}
+h3 {
+  margin: auto;
+  margin-bottom: 1em;
+  width: 10em;
+  border-bottom: 0.1em solid #5cc8ff;
+}
+div {
+  margin: auto;
+  width: 20rem;
+  margin-bottom: 2em;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 360px;
+}
+.colorNames {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  /*-margin: -2em auto;*/
+  padding: 0;
+  text-align: center;
+}
+.colorNames li {
+  padding: 1.1em;
+  /*margin-bottom: -2em;*/
+}
+.mbground,
+.mtext,
+.nav,
+.hover,
+.focus {
+  margin: auto;
+  width: 50%;
+  color: #0e0c06;
+  margin-bottom: 1em;
+}
+.mbground {
+  background-color: #5cc8ff;
+}
+.mtext {
+  background-color: #0e0c06;
+  color: #f8f6f1;
+}
+.nav {
+  background-color: #f764b7;
+}
+.hover {
+  background-color: #fcff5c;
+}
+.focus {
+  background-color: #65e77f;
+  margin-bottom: 5em;
+}
+.fonts {
+  margin: auto;
+}
