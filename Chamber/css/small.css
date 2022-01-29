@@ -1,18 +1,21 @@
-*{
+* {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
 body {
   font-size: 16px;
 }
-/*header {
-  background-image: linear-gradient(180deg, #fff, #5cc8ff);
-}*/
+h1, h2 {
+  font-family: 'Architects Daughter', cursive;
+}
+a, p, nav {
+  font-family: 'Catamaran', cursive;
+}
 header {
   background-image: linear-gradient(180deg, #fff, #5cc8ff);
   display: grid;
@@ -26,35 +29,38 @@ header img {
 header div {
   width: 100px;
   height: auto;
-  margin-top: 0.8em;
-  margin-left: 2%
+  margin-top: 1.3em;
+  margin-left: 2%;
 }
 header h1 {
   font-size: 1.4em;
   text-align: center;
-  margin-right: 1em;
-  margin-top: 1.3em;
+  margin: 1.3em 1em 0 0.8em;
   padding: 0.2em;
 }
 header h2 {
   font-size: 1em;
   text-align: center;
-  grid-column: 2 / 4;
+  grid-column: 2 / 3;
 }
 header p {
   grid-column: 1 / 4;
   text-align: center;
   padding: 0.5em;
   margin: 0.5em;
-  border-top: 1px solid rgba(0,0,0,0.2);
-  border-bottom: 1.2px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.3);
 }
 header button {
   font-size: 2em;
-  color: rgb(129, 126, 126);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 nav {
   grid-column: 1 / 4;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.1)
 }
 nav ul {
   display: none;
@@ -99,11 +105,14 @@ main {
   margin: 2%;
 }
 main p {
-  background-color: rgba(0,0,0,0.03);
+  background-color: rgba(0, 0, 0, 0.03);
   width: 100%;
-  border: 2px solid rgba(0,0,0,0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   padding: 2em;
   margin-bottom: 2%;
+}
+#join {
+  display: none;
 }
 footer {
   background-image: linear-gradient(180deg, #fff, #5cc8ff, #0ac6ff, #05acff);
