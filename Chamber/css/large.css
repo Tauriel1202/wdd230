@@ -27,7 +27,7 @@
   main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 18% 1fr 1fr 1fr 2em;
+    grid-template-rows: 15% 1fr 1fr 1fr 2em;
     column-gap: 0.3em;
     row-gap: 0.5em;
   }
