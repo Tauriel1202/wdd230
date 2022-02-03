@@ -15,7 +15,6 @@ btn.addEventListener('click', () => {
     
     lstItem.append(delBtn)
     lst.append(lstItem);
-    console.log('💩')
     item.value = ''
     item.focus()
     }
