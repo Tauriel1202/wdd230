@@ -15,4 +15,15 @@ let currentDate = `${mod}`
 const formatDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(current);
 
 date.innerHTML = formatDate
-lastMod.innerHTML = `&copy; ${year} Wayu Chamber || Courtney Christensen || WDD 230 Project || Last Modified: ${currentDate}`
+lastMod.innerHTML = `&copy; ${year} Wayu Chamber 🌴 Courtney Christensen 🌴 WDD 230 Project 🌴 Last Modified: ${currentDate}`
+
+/*msg JS */
+const day = current.getDay();
+const msg = document.querySelector('#msg')
+console.log(day)
+if (day == 1 || day == 2) {
+  msg.classList.add('show')
+}
+else {
+  msg.classList.add('hide')
+}

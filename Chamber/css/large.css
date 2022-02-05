@@ -1,63 +1,81 @@
 @media only screen and (min-width: 64em) {
-  header,
-  main,
-  footer {
-    max-width: 64rem;
-    margin: auto;
+  #hamBtn {
+    display: none;
   }
   #headerNav {
     display: flex;
+    justify-content: center;
   }
-  #hamBtn {
-    display: none;
+  #headerNav a {
+    padding: 3.5em;
   }
   nav {
     padding: 0;
   }
-  nav ul li {
-    padding: 0.3em 0;
-    width: 15%;
-  }
-  nav ul li a {
-    padding: 0 2em;
-  }
-  main h1 {
-    margin: 2%;
-  }
   main {
-    display: grid;
+    max-width: 64rem;
+    margin: auto;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 15% 1fr 1fr 1fr 2em;
-    column-gap: 0.3em;
-    row-gap: 0.5em;
+    column-gap: 0.4em;
+    row-gap: 0.4em;
   }
-  main p:nth-of-type(1) {
+  main section:nth-of-type(1),
+  main section:nth-of-type(2),
+  main section:nth-of-type(3),
+  main section:nth-of-type(4),
+  #spot1,
+  #spot2,
+  #spot3,
+  #join {
+    margin: 0;
+  }
+  main section:nth-of-type(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  #hero {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
   }
-  main p:nth-of-type(2) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-  main p:nth-last-of-type(3) {
+  #spot1 {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
-  main p:nth-last-of-type(4) {
-    grid-column: 2 / 4;
-    grid-row: 4 / 5;
-  }
-  main p:nth-last-of-type(5) {
+  main section:nth-of-type(3) {
     grid-column: 1 / 2;
-    grid-row: 3/ 4;
+    grid-row: 3 / 4;
   }
-  main p:nth-of-type(6) {
+  main section:nth-of-type(4) h2 {
+    padding-top: 2em;
+  }
+  main section:nth-of-type(4) p {
+    padding-bottom: 5em;
+  }
+  #spot2 {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
   }
   #join {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    margin: 1.3%;
+    padding-top: 5em;
   }
+  #join a {
+    padding: 0.4em 2em;
+  }
+  #join p {
+    padding-top: 5em;
+  }
+  main section:nth-of-type(4) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  #spot3 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+  }
+ #spot3 h2 {
+   margin: 0;
+ }
 }

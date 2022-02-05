@@ -1,50 +1,84 @@
 @media only screen and (min-width: 32.5em){
   header {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 8fr 1fr;
     column-gap: 2%;
   }
   header h1, header h2 {
     text-align: left;
     margin-right: 0;
   }
+  header h2 {
+    margin-left: 14%;
+  }
+  #social {
+    display: flex;
+  }
+  #social img {
+    width: 80%;
+  }
+  #fb {
+    width: 100%;
+  }
+  #in {
+    width: 100%;
+  }
   h2 {
     margin-left: 1.4em;
   }
   main {
-    margin: 0;
-    margin: 0.5em;
     display: grid;
-    grid-template-rows: 10% repeat(7, 1fr);
-    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
   }
-  main p:nth-of-type(1) {
-    grid-row: 2 / 3;
+  #heroP, #spot1 h2, #spot2 h2 {
+    margin: 0;
+  }
+  #spot1 div {
+    padding: 1em;
+  }
+  #spot2 div {
+    padding: 2.3em;
+  }
+  main section:nth-of-type(1) {
     grid-column: 1 / 3;
   }
-  main p:nth-of-type(4) {
+  main section:nth-of-type(4) {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
   }
-  main p:nth-of-type(5), main p:nth-of-type(6) {
+  #spot1 {
+    grid-column: 1 / 2;
     grid-row: 4 / 5;
-    margin-right: 0.3em;
-    margin-left: 0.3em;
+    margin: 0.3%;
+  }
+  #spot2 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: 0.3%;
   }
   #join {
-    display: unset;
+    display: block;
     grid-column: 1 / 3;
-    grid-row: 5 / 6;
+    grid-row: 5 / 6;  
+    margin: 2% 0.3%;
+    padding: 1em;
   }
-  main p:nth-of-type(2), main p:nth-of-type(3) {
+  #join a {
+    background-color: #65e77f;
+    color: #000;
+    border-radius: 10px;
+    padding: 0 8em;
+  }
+  #join p {
+    text-align: center;
+    padding-top: 1.5em;
+  }
+  main section:nth-of-type(2), main section:nth-of-type(3) {
     grid-row: 6 / 7;
-    margin-right: 0.3em;
-    margin-left: 0.3em;
+    margin: 1%;
   }
-  main p {
-    margin: 0.5%;
-    width: auto;
-  }
+
+  /*footer css*/
   footer {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
