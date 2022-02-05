@@ -63,8 +63,9 @@
     grid-row: 4 / 5;
     padding-top: 5em;
   }
-  #join a {
+  #join h2 {
     padding: 0.4em 2em;
+    margin: auto;
   }
   #join p {
     padding-top: 5em;
