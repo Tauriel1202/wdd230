@@ -137,6 +137,8 @@ nav ul {
   margin: auto;
   list-style-type: none;
 }
+/***************************MAIN CSS *****************************/
+
 main {
   margin: 2%;
 }
@@ -186,10 +188,23 @@ section img {
   width: 100%;
   height: auto;
 }
-/*mainImg and heroImg are actually the divs around the imgs*/
-.mainImg {
+/*mainImg and heroImg are actually the divs around the imgs
+  mainImg is the weather img*/
+#weather {
+  display: grid;
+}
+#weather .mainImg {
+  width: 100%;
+  min-width: 70px;
+  max-width: 150px;
+  padding-top: 1em;
   margin: auto;
-  padding: 2% 0;
+}
+#weather p {
+  font-size: 3em;
+  grid-column: 2 / 3; 
+  margin: auto;
+  padding: 0.6em;
 }
 section h2 {
   color: #002B8F;
@@ -209,9 +224,13 @@ section:nth-of-type(3) h3 {
   padding: 2% 0;
   margin: 2% 0;
 }
+
+/****************Display in Larger View ***********************/
 #join, #spot3, #hero2 {
   display: none;
 }
+/*****************************FOOTER CSS **************************************/
+
 footer {
   background-image: linear-gradient(180deg, #fff, #5cc8ff, #0ac6ff, #05acff);
   display: grid;
