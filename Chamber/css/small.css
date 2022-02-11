@@ -43,6 +43,7 @@ header {
 }
 header img {
   width: 100%;
+  height: auto;
   border-radius: 100px;
   margin: 1em;
 }
