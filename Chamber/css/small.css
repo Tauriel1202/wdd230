@@ -253,3 +253,7 @@ footer a {
   text-decoration: none;
   color: #000;
 }
+/**************Temporary CSS *****************************/
+#falseImg img {
+  width: 100%;
+}

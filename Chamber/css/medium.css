@@ -26,10 +26,12 @@
   h2 {
     margin-left: 1.4em;
   }
-  main {
+  /*******Change this back to MAIN**********/
+  #normalContent {
     display: grid;
     column-gap: 2%;
   }
+  /****************************************/
   #heroP, #spot1 h2, #spot2 h2 {
     margin: 0;
   }
@@ -78,8 +80,7 @@
     grid-row: 6 / 7;
     margin: 1%;
   }
-
-  /*footer css*/
+  /***************Footer CSS******************/
   footer {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;

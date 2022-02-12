@@ -12,13 +12,22 @@
   nav {
     padding: 0;
   }
-  main {
+  #normalContent {
     max-width: 64rem;
     margin: auto;
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 0.4em;
     row-gap: 0.4em;
+  } 
+  /*********************REMOVE THIS********/
+  #falseImg {
+    display: flex;
+    justify-content: center;
   }
+  #falseImg img {
+    max-width: 64rem;
+  }
+  /****************************************/
   main section:nth-of-type(1),
   main section:nth-of-type(2),
   main section:nth-of-type(3),
@@ -31,22 +40,22 @@
   }
   main section:nth-of-type(2) {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
   #hero {
     grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-row: 3 / 5;
   }
   #hero2 {
     display: grid;
   }
   #spot1 {
     grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
   main section:nth-of-type(3) {
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
   main section:nth-of-type(4) h2 {
     padding-top: 2em;
@@ -56,11 +65,11 @@
   }
   #spot2 {
     grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
   #join {
     grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     padding-top: 5em;
   }
   #join h2 {
@@ -72,12 +81,12 @@
   }
   main section:nth-of-type(4) {
     grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
   }
   #spot3 {
     display: block;
     grid-column: 3 / 4;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
   }
  #spot3 h2 {
    margin: 0;
