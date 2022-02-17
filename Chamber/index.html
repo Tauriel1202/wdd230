@@ -69,126 +69,120 @@
     <main>
       <!--temporary hero here-->
       <picture id="falseImg">
-        <img
-          src="./images/medFalse.jpg"
-          alt="false hero"
-          sizes="100"
-          srcset="
-            ./images/smallFalse.jpg 400w,
-            ./images/medFalse.jpg 800w,
-            ./images/largeFalse-1.jpg 1200w
-          "
-        />
+        <source media="(max-width: 400px)" srcset="./images/smallFalse.jpg" />
+        <source media="(max-width: 800px)" srcset="./images/medFalse.jpg" />
+        <source media="(max-width: 1200px)" srcset="./images/largeFalse.jpg" />
+        <img src="./images/medFalse.jpg" alt="false hero" />
       </picture>
       <!------------------------>
       <div id="normalContent">
-      <h1>Home</h1>
-      <section id="hero">
-        <img
-          src="images/heroOPS.jpg"
-          alt="hero img"
-          width="500"
-          height="500"
-        />
-        <img
-          id="hero2"
-          src="images/hero2.jpg"
-          alt="hero img 2"
-          width="500"
-          height="335"
-        />
+        <h1>Home</h1>
+        <section id="hero">
+          <img
+            src="images/heroOPS.jpg"
+            alt="hero img"
+            width="500"
+            height="500"
+          />
+          <img
+            id="hero2"
+            src="images/hero2.jpg"
+            alt="hero img 2"
+            width="500"
+            height="335"
+          />
 
-        <h2 id="heroP">Welcome to Wayu-Wayu Island</h2>
-        <a href="#" id="heroA"><strong>Join the Chamber</strong></a>
-      </section>
+          <h2 id="heroP">Welcome to Wayu-Wayu Island</h2>
+          <a href="#" id="heroA"><strong>Join the Chamber</strong></a>
+        </section>
 
-      <section id="events">
-        <h2>Drip-Drop 💧</h2>
-        <h3>Celebration of the Rain</h3>
-        <p>
-          Join us in celebrating the season of rain, Saturday from 3p.m. to
-          sunset.<br /><a href="#">more info ...</a>
-        </p>
-      </section>
+        <section id="events">
+          <h2>Drip-Drop 💧</h2>
+          <h3>Celebration of the Rain</h3>
+          <p>
+            Join us in celebrating the season of rain, Saturday from 3p.m. to
+            sunset.<br /><a href="#">more info ...</a>
+          </p>
+        </section>
 
-      <section>
-        <h2>Weather</h2>
-        <div id="weather">
+        <section>
+          <h2>Weather</h2>
+          <div id="weather">
+            <div class="mainImg">
+              <img
+                src="./images/newRain.jpg"
+                alt="weather img"
+                width="300"
+                height="100"
+              />
+            </div>
+            <p><span id="temp">70</span> &#8457;</p>
+          </div>
+          <h3>Rain</h3>
+          <p>Wind Speed: <span id="speed">20</span>mph</p>
+          <p>Wind Chill: <span id="chill"></span></p>
+        </section>
+
+        <section>
+          <h2>News Release</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            commodi vitae labore fugiat aliquam. Corrupti deleniti, voluptatem
+            maiores consequuntur ducimus consequatur ab earum, tempora aperiam
+            obcaecati, sed quas? Cupiditate, odit.
+          </p>
+        </section>
+
+        <section id="spot1">
+          <h2>The Salty Breeze</h2>
           <div class="mainImg">
             <img
-              src="./images/newRain.jpg"
-              alt="weather img"
-              width="300"
-              height="100"
+              src="images/resortBground.jpg"
+              alt="resort img"
+              width="50"
+              height="50"
             />
           </div>
-          <p><span id="temp">70</span> &#8457;</p>
-        </div>
-        <h3>Rain</h3>
-        <p>Wind Speed: <span id="speed">20</span>mph</p>
-        <p>Wind Chill: <span id="chill"></span></p>
-      </section>
+          <p><em>'The only resort around!'</em></p>
+          <p>resortww@wayuisland.com<br />+123-324-7856 | Website</p>
+        </section>
+        <section id="spot2">
+          <h2>Shells for Shore</h2>
+          <div class="mainImg">
+            <img
+              src="images/shellBground.jpg"
+              alt="shell img"
+              width="50"
+              height="50"
+            />
+          </div>
+          <p>A shell finding activity for kids.</p>
+          <p>shellww@wayuisland.com<br />+789-521-3652</p>
+        </section>
+        <section id="spot3">
+          <h2>Woven Wonders</h2>
+          <div class="mainImg">
+            <img
+              src="./images/woven.jpg"
+              alt="woven items img"
+              width="50"
+              height="50"
+            />
+          </div>
+          <p>
+            <em>Weave</em> got you covered with clothes, souveniers, and daily
+            items.
+          </p>
+          <p>wove@wayuisland.com<br />+987-963-5874</p>
+        </section>
 
-      <section>
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae commodi
-          vitae labore fugiat aliquam. Corrupti deleniti, voluptatem maiores
-          consequuntur ducimus consequatur ab earum, tempora aperiam obcaecati,
-          sed quas? Cupiditate, odit.
-        </p>
-      </section>
-
-      <section id="spot1">
-        <h2>The Salty Breeze</h2>
-        <div class="mainImg">
-          <img
-            src="images/resortBground.jpg"
-            alt="resort img"
-            width="50"
-            height="50"
-          />
-        </div>
-        <p><em>'The only resort around!'</em></p>
-        <p>resortww@wayuisland.com<br />+123-324-7856 | Website</p>
-      </section>
-      <section id="spot2">
-        <h2>Shells for Shore</h2>
-        <div class="mainImg">
-          <img
-            src="images/shellBground.jpg"
-            alt="shell img"
-            width="50"
-            height="50"
-          />
-        </div>
-        <p>A shell finding activity for kids.</p>
-        <p>shellww@wayuisland.com<br />+789-521-3652</p>
-      </section>
-      <section id="spot3">
-        <h2>Woven Wonders</h2>
-        <div class="mainImg">
-          <img
-            src="./images/woven.jpg"
-            alt="woven items img"
-            width="50"
-            height="50"
-          />
-        </div>
-        <p>
-          <em>Weave</em> got you covered with clothes, souveniers, and daily
-          items.
-        </p>
-        <p>wove@wayuisland.com<br />+987-963-5874</p>
-      </section>
-
-      <section id="join">
-        <a href="#"><h2>Join Us!</h2></a>
-        <p>
-          Discover how to join the chamber of commerce and how it will benefit
-          your organization!
-        </p>
-      </section>
+        <section id="join">
+          <a href="#"><h2>Join Us!</h2></a>
+          <p>
+            Discover how to join the chamber of commerce and how it will benefit
+            your organization!
+          </p>
+        </section>
       </div>
     </main>
     <footer>
