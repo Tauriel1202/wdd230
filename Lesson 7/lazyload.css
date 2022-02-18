@@ -16,6 +16,7 @@ img {
   width: 100%;
   height: auto;
   filter: blur(0em);
+  transition: filter 2.5s;
 }
 img[data-src] {
   filter: blur(0.2em)
