@@ -1,4 +1,4 @@
-let images = document.querySelectorAll('img[data-src]');
+let images = Array.from(document.querySelectorAll('img[data-src]'));
 const loadImages = (image) => {
   image.setAttribute('src',image.getAttribute('data-src'));
   image.onload = () => {
@@ -8,7 +8,7 @@ const loadImages = (image) => {
 
 if('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
+    items.map((item) => {
       if(item.isIntersecting){
         loadImages(item.target);
         observer.unobserve(item.target)
@@ -16,12 +16,12 @@ if('IntersectionObserver' in window) {
     });
   });
 
-  images.forEach((img) => {
+  images.map((img) => {
     observer.observe(img);
   });
 } 
 else {
-  images.forEach((img) => {
+  images.map((img) => {
     load(img);
   });
 }

@@ -56,7 +56,7 @@ header h1 {
   font-size: 1.4em;
   text-align: left;
   margin-top: 1.3em;
-  margin-left: 0.7em;
+  margin-left: 1em;
   padding: 0.2em;
 }
 header h2 {
@@ -139,7 +139,11 @@ nav ul {
   list-style-type: none;
 }
 /***************************MAIN CSS *****************************/
-
+/*************************Temporary CSS**********/
+#falseImg img {
+  width: 100%;
+}
+/************************************************/
 main {
   margin: 2%;
 }
@@ -253,7 +257,37 @@ footer a {
   text-decoration: none;
   color: #000;
 }
-/**************Temporary CSS *****************************/
-#falseImg img {
+/**************DISCOVER CSS*****************************/
+#heading {
+  text-align: center;
+}
+#discoverP {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#discoverCards article {
+  text-align: center;
+  background-color: #000;
+  border-radius: 1em;;
+  margin-bottom: 2em;
+}
+#discoverCards img {
   width: 100%;
+  height: auto;
+  border-radius: 1em 1em 0 0;
+  filter: blur(0em);
+  transition: filter 3.5s;
+}
+#discoverCards img[data-src] {
+  filter: blur(0.2em);
+}
+#discoverCards p {
+  border-radius: 0 0 1em 1em;
+  color: #f8f6f1;
+  margin: 0;
+  padding: 1.5em 0.1em;
+}
+#visit {
+  font-size: 1.3em;
+  text-align: center;
 }

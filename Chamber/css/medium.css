@@ -11,6 +11,9 @@
   header h2 {
     margin-left: 14%;
   }
+  #pic img {
+    min-width: 2em;
+  }
   #social {
     display: flex;
   }
@@ -108,5 +111,17 @@
   #lastMod {
     grid-column: 1 / 5;
     text-align: center;
+  }
+  /*******************DISCOVER CSS*****************/
+  #discoverP {
+    max-width: 700px;
+    margin: 2em auto;
+  }
+  #discoverCards {
+    max-width: 700px;
+    margin: auto;
+  }
+  #discoverCards article:hover {
+    border: 5.0px solid #65e77f;
   }
 }
