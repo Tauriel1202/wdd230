@@ -63,11 +63,12 @@ console.log(lv)
 const today = Date.now();
 const msInDay = 1000 * 60 * 60 * 24;
 let timeSince = Math.round((today - lv) / msInDay);
+console.log(timeSince)
 
 localStorage.setItem("visits-ls", today);
 
 if (lv !== 0) {
   visit.textContent = `🌊Welcome Back! 🌺 It has been ${timeSince} days since your last visit.🌴`;
 } else {
-  visit.textContent = `🌊Welcome to the Chamber!🌺Enjoy your visit!🌴`;
+  visit.textContent = `🌊Welcome to the Chamber!🌺Enjoy your first visit!🌴`;
 }
