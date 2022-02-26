@@ -125,6 +125,10 @@
     border: 5.0px solid #65e77f;
   }
   /**********************JOIN CSS********************/
+  #joinH1 {
+    margin: 0 auto;
+    text-align: center;
+  }
   form h2 {
     margin: 0;
   }
