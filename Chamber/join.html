@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Chamber of Commerce Join" />
+
+    <title>Chamber of Commerce: Discover Wayu-Wayu</title>
+
+    <link rel="shortcut icon" href="./images/wwccIcon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/small.css" />
+    <link rel="stylesheet" type="text/css" href="./css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="./css/large.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p id="msg">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </p>
+      <div id="pic">
+        <a href="index.html"
+          ><img
+            src="./images/wwLOGOpngBASED.webp"
+            alt="Wayu-Wayu Island Chamber of Commerce Logo"
+            width="200"
+            height="123"
+        /></a>
+      </div>
+      <h1>Wayu-Wayu Chamber of Commerce</h1>
+      <div id="social">
+        <a href="https://www.facebook.com/" id="fb">
+          <img src="images/fb.png" alt="facebook icon" width="10" height="10" />
+        </a>
+        <a href="https://www.linkedin.com/" id="in">
+          <img
+            src="images/in-1.png"
+            alt="linkedin icon"
+            width="10"
+            height="10"
+          />
+        </a>
+      </div>
+      <h2>Sand, Surf, and Sunshine</h2>
+      <p class="date"></p>
+      <nav>
+        <button id="hamBtn">&#9776;</button>
+        <ul id="headerNav">
+          <li><a href="chamberHome.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li class="active"><a href="join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Join the Chamber</h1>
+      <div id="joinContent">
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <h2>Business Application</h2>
+            <label class="app"
+              >First Name* <input type="text" name="firstName" required
+            /></label>
+            <label class="app"
+              >Last Name* <input type="text" name="lastName" required
+            /></label>
+            <label class="app"
+              >Business Position Title
+              <input type="text" name="title" pattern="[a-zA-Z-\s]{7,}" />
+            </label>
+            <label class="app"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone1@gmail.com"
+                required
+            /></label>
+            <label class="app"
+              >Phone* <input type="tel" name="phone" required
+            /></label>
+            <label class="app"
+              >Business Name* <input type="text" name="business" required
+            /></label>
+            <label class="app"
+              >Business Description
+              <input
+                type="textArea"
+                name="description"
+                placeholder="Briefly describe your business"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <h2>Choose a Membership Level</h2>
+            <h3 id="levelsBelow">See below for the perks of each level</h3>
+            <h3 id="levelsSide">See the side section for level perks</h3>
+            <label class="ship"
+              ><input type="radio" name="free" /> Non-Profit</label
+            >
+            <label class="ship"
+              ><input type="radio" name="bronze" /> Bronze</label
+            >
+            <label class="ship"
+              ><input type="radio" name="silver" /> Silver</label
+            >
+            <label class="ship"><input type="radio" name="gold" /> Gold</label>
+
+            <label><input type="hidden" id="t" name="date" /></label>
+            <label><input type='submit' name="btn" value="Join the Chamber" onclick="formTime()"></label>
+          </fieldset>
+          <!--<button onclick="formTime()">Join the Chamber</button>-->
+        </form>
+        <aside>
+          <h2>Membership Levels</h2>
+          <div id="free">
+            <h3>
+              <img
+                src="./images/npMedal.jpg"
+                alt="np medal"
+                width="25"
+                height="25"
+              />
+              Non-Profit - Free
+            </h3>
+            <p>
+              Join the Chamber for free. Have your business posted in the
+              directory.
+            </p>
+          </div>
+          <div id="bronze">
+            <h3>
+              <img
+                src="./images/bronzeMedal.jpg"
+                alt="bronze medal"
+                width="'25"
+                height="25"
+              />
+              Bronze - $500
+            </h3>
+            <p>
+              Join events as well as have your business on the directory.
+            </p>
+          </div>
+          <div id="silver">
+            <h3>
+              <img
+                src="./images/silverMedal.jpg"
+                alt="silver medal"
+                width="25"
+                height="25"
+              />
+              Silver - $1000
+            </h3>
+            <p>
+              Be included in the spotlights on the home page and the directory
+              plus stay up-to-date with chamber events.
+            </p>
+          </div>
+          <div id="gold">
+            <h3>
+              <img
+                src="./images/goldMedal.jpg"
+                alt="gold medal"
+                width="25"
+                height="25"
+              />
+              Gold - $2000
+            </h3>
+            <p>
+              Enjoy all the benefits of a full membership from having your
+              business on the home page to advertising and hosting your own
+              events through the chamber. All the perks of the other levels are also included in this
+              package.
+            </p>
+          </div>
+        </aside>
+        <div id="joinImg">
+          <img 
+            src="./images/medals.jpg" 
+            alt="membership medal imgs" 
+            width="275" 
+            height="275">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="index.html"
+        ><img
+          src="./images/wwLOGOpngBASED.webp"
+          alt="Wayu-Wayu Chamber of Commerce Logo"
+          width="100"
+          height="62"
+      /></a>
+      <p>Wayu-Wayu Chamber of Commerce</p>
+      <p>2 Seacean Road<br />Wayu-Wayu Island</p>
+      <p>info.wayuislandcc.org<br />+(007) 1200-3252</p>
+      <p><a href="#">📍 Location Map</a></p>
+      <p id="lastMod"></p>
+    </footer>
+  </body>
+</html>

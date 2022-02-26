@@ -124,4 +124,27 @@
   #discoverCards article:hover {
     border: 5.0px solid #65e77f;
   }
-}
+  /**********************JOIN CSS********************/
+  form h2 {
+    margin: 0;
+  }
+  form, aside {
+    max-width: 50em;
+    margin: 2em auto;  
+  }
+/********************THANKS CSS******************/
+  #thankYou  {
+    width: 25em;
+    margin: 5% auto 7%;
+  }
+  #thankYou p, #thankYou button:nth-of-type(1) {
+    margin-bottom: 1%;
+  }
+  #thankYou button {
+    margin-left: 1%;
+  }
+
+
+
+  
+} /*<-----VERY VERY VERY IMPORTANT!!!

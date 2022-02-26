@@ -6,20 +6,24 @@ btn.addEventListener("click", () => {
 });
 
 let lastMod = document.querySelector("#lastMod");
-let date = document.querySelector("#date");
+let date = document.querySelector(".date");
 let current = new Date();
 
 let mod = document.lastModified;
 let year = new Date().getFullYear();
 let currentDate = `${mod}`;
 
-const formatDate = new Intl.DateTimeFormat("en-UK", {
+function newDate(date){
+ return new Intl.DateTimeFormat("en-UK", {
   dateStyle: "full",
-}).format(current);
+}).format(date);
+}
+const formatDate = newDate(current)
 
-date.innerHTML = formatDate;
-lastMod.innerHTML = `&copy; ${year} Wayu Chamber 🌴 Courtney Christensen 🌴 WDD 230 Project 🌴 Last Modified: ${currentDate}`;
-
+if (date) {
+  date.innerHTML = formatDate;
+  lastMod.innerHTML = `&copy; ${year} Wayu Chamber 🌴 Courtney Christensen 🌴 WDD 230 Project 🌴 Last Modified: ${currentDate}`;
+}
 /******************************MSG JS*********************************/
 const day = current.getDay();
 const msg = document.querySelector("#msg");
@@ -59,16 +63,28 @@ if ("IntersectionObserver" in window) {
 /**********************LAST VISIT************************/
 const visit = document.querySelector("#visit");
 const lv = Number(localStorage.getItem("visits-ls"));
-console.log(lv)
+console.log(lv);
 const today = Date.now();
 const msInDay = 1000 * 60 * 60 * 24;
 let timeSince = Math.round((today - lv) / msInDay);
-console.log(timeSince)
+console.log(timeSince);
 
 localStorage.setItem("visits-ls", today);
 
-if (lv !== 0) {
-  visit.textContent = `🌊Welcome Back! 🌺 It has been ${timeSince} days since your last visit.🌴`;
-} else {
-  visit.textContent = `🌊Welcome to the Chamber!🌺Enjoy your first visit!🌴`;
+if (visit) {
+  if (lv !== 0) {
+    visit.innerHTML = `🌊Welcome Back! 🌺 It has been ${timeSince} days since your last visit.🌴`;
+  } else {
+    visit.textContent = `🌊Welcome to the Chamber!🌺Enjoy your first visit!🌴`;
+  }
+}
+/******************Form Time**************************/
+function formTime() {
+  console.clear();
+  
+  let currentD = new Date()
+  let formTime = (`${newDate(currentD)} ${currentD.getHours()}:${currentD.getMinutes()}`)
+  document.getElementById("t").value = formTime;
+  
+  console.log(formTime)
 }

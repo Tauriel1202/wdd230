@@ -91,5 +91,38 @@
  #spot3 h2 {
    margin: 0;
  }
-}
-  /***************DISCOVER CSS*************/  
+ /***************DISCOVER CSS*************/ 
+ /****************************************/
+  /***************JOIN CSS*****************/
+  #joinContent {
+    max-width: 70em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  form, aside {
+    width: 30em;
+  }
+  form h2 {
+    padding-bottom: 0.4em;
+  } 
+  form {
+    grid-row: 1 / 3;
+  }
+  aside {
+    height: 90%;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+  }
+  #levelsBelow {
+    display: none;
+  }
+  #levelsSide {
+    display: inline;
+  }
+  #joinImg {
+    display: inline;
+    width: 19.3em;
+    margin: 0 auto;
+  }
+} /**<--This bracket is VERY IMPORTANT!!! DO NOT IGNORE!!!*/
