@@ -35,7 +35,8 @@ footer {
 /**********************************************/
 @media only screen and (min-width: 32em){
   .cards {
-    column-count: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   section {
     margin-top: 0;
@@ -44,7 +45,7 @@ footer {
 /********************Large********************/
 @media only screen and (min-width: 64em){
   .cards {
-    column-count: 4;
+    grid-template-columns: repeat(4, 1fr);
   }
   
 }
