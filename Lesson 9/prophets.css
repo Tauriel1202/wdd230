@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  text-align: center;
+}
+h1, footer {
+  background-image: linear-gradient(180deg, #fff, #f8f6f1, #cecece);
+  color: rgb(82, 13, 209);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+section {
+  background-color: #f8f1e1;
+  border: 2px solid #aa7878;
+  margin: 2% 5%;
+  break-inside: avoid-column;;
+}
+h2, h3, p {
+  line-height: 1em;
+}
+img {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 5%;
+}
+footer {
+  font-size: 1em;
+  padding: 1.2em;
+  border-top: 2px solid rgb(82, 13, 209);
+  margin-top: 5%;
+}
+/**********************************************/
+@media only screen and (min-width: 32em){
+  .cards {
+    column-count: 2;
+  }
+  section {
+    margin-top: 0;
+  }
+}
+/********************Large********************/
+@media only screen and (min-width: 64em){
+  .cards {
+    column-count: 4;
+  }
+  
+}
