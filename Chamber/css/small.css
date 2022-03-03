@@ -400,14 +400,18 @@ aside p {
   margin-top: 2em;
   margin: 3%;
 }
-#thankYou button {
+#thankYou #next {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+#thankYou #next li {
+  list-style-type: none;
   background-color: var(--btnBground);
   border: 2px solid var(--btnColor);
   border-radius: 5px;
   padding: 0.3em 0.4em;
-  margin-left: 3%;
-  margin-bottom: 3%;
+  display: inline;
 }
-#thankYou button a {
+#thankYou #next li a {
   color: #000;
 }
