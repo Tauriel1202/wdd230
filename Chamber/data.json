@@ -5,7 +5,7 @@
       "address": "1 Seacean Road",
       "phone": "+123-324-7856",
       "site": "resortww@wayuisland.com",
-      "img": "Chamber/images/resortBground.jpg",
+      "img": "./images/resortBground.jpg",
       "level": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "5 Seacean Road",
       "phone": "+789-w521-3652",
       "site": "shellww@wayuisland.com",
-      "img": "Chamber/images/shellBground.jpg",
+      "img": "./images/shellBground.jpg",
       "level": "Silver"
     },
     {
@@ -21,7 +21,7 @@
       "address": "4 Seacean Road",
       "phone": "+987-963-5874",
       "site": "wove@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "Silver"
     },
     {
@@ -29,7 +29,7 @@
       "address": "3 Seacean Road",
       "phone": "+745-698-5235",
       "site": "niceIce@wayuisland.com",
-      "img": "",
+      "img": "./images/resortBground.jpg",
       "level": "Silver"
     },
     {
@@ -37,23 +37,23 @@
       "address": "6 Seacean Road",
       "phone": "+889-635-4521",
       "site": "dineUs@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/resortBground.jpg",
       "level": "Gold"
     },
     {
       "name": "Clamming the Deep",
-      "address": "2 Boardwalk Way",
+      "address": "1 Boardwalk Way",
       "phone": "+778-121-9653",
       "site": "clammy@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "Bronze"
     },
     {
       "name": "Volcanic Ventures",
-      "address": "1 Boardwalk Way",
+      "address": "3 Inland Road",
       "phone": "+445-632-9658",
       "site": "vTours@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "Bronze"
     },
     {
@@ -61,7 +61,7 @@
       "address": "8 Seacean Road",
       "phone": "+854-563-5215",
       "site": "surfer@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "NP"
     },
     {
@@ -69,7 +69,7 @@
       "address": "1 Inland Road",
       "phone": "+665-632-7454",
       "site": "inex@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "Gold"
     },
     {
@@ -77,7 +77,7 @@
       "address": "1-5 Traid Boardwalk",
       "phone": "+753-951-8527",
       "site": "outland@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "Silver"
     },
     {
@@ -85,7 +85,7 @@
       "address": "2 Boardwalk Way",
       "phone": "+456-852-95154",
       "site": "fishnc@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "Bronze"
     },
     {
@@ -93,7 +93,7 @@
       "address": "2 Inland Road",
       "phone": "+123-201-0021",
       "site": "save@wayuisland.com",
-      "img": "Chamber/images/woven.jpg",
+      "img": "./images/woven.jpg",
       "level": "NP"
     }
   ]
