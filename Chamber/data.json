@@ -1,0 +1,102 @@
+{
+  "companies": [
+    {
+      "name": "Salty Breeze",
+      "address": "1 Seacean Road",
+      "phone": "+123-324-7856",
+      "site": "resortww@wayuisland.com",
+      "img": "Chamber/images/resortBground.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Shells for Shore",
+      "address": "5 Seacean Road",
+      "phone": "+789-w521-3652",
+      "site": "shellww@wayuisland.com",
+      "img": "Chamber/images/shellBground.jpg",
+      "level": "Silver"
+    },
+    {
+      "name": "Woven Wonders",
+      "address": "4 Seacean Road",
+      "phone": "+987-963-5874",
+      "site": "wove@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Silver"
+    },
+    {
+      "name": "Nice Ice!",
+      "address": "3 Seacean Road",
+      "phone": "+745-698-5235",
+      "site": "niceIce@wayuisland.com",
+      "img": "",
+      "level": "Silver"
+    },
+    {
+      "name": "Tropical Evening",
+      "address": "6 Seacean Road",
+      "phone": "+889-635-4521",
+      "site": "dineUs@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Clamming the Deep",
+      "address": "2 Boardwalk Way",
+      "phone": "+778-121-9653",
+      "site": "clammy@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Bronze"
+    },
+    {
+      "name": "Volcanic Ventures",
+      "address": "1 Boardwalk Way",
+      "phone": "+445-632-9658",
+      "site": "vTours@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Bronze"
+    },
+    {
+      "name": "Surf Shack",
+      "address": "8 Seacean Road",
+      "phone": "+854-563-5215",
+      "site": "surfer@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "NP"
+    },
+    {
+      "name": "Island Explorations",
+      "address": "1 Inland Road",
+      "phone": "+665-632-7454",
+      "site": "inex@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Mainland Merchants",
+      "address": "1-5 Traid Boardwalk",
+      "phone": "+753-951-8527",
+      "site": "outland@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Silver"
+    },
+    {
+      "name": "Fishin the Sea",
+      "address": "2 Boardwalk Way",
+      "phone": "+456-852-95154",
+      "site": "fishnc@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "Bronze"
+    },
+    {
+      "name": "Island Refuge",
+      "address": "2 Inland Road",
+      "phone": "+123-201-0021",
+      "site": "save@wayuisland.com",
+      "img": "Chamber/images/woven.jpg",
+      "level": "NP"
+    }
+  ]
+}
+
+ 
