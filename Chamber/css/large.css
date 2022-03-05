@@ -132,10 +132,16 @@
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
   }
-
+  .shops[name='grid'] section:nth-child(3) p, .shops[name='grid'] section:nth-child(3) a {
+    line-height: 0;
+  }
+  .shops[name='grid'] section:nth-child(3) h2 {
+    margin: 0;
+  }
 /*************LIST MODE CSS*****************/
   .shops[name='lst'] {
     max-width: 64rem;
+    margin: auto;
   }
 
 
