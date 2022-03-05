@@ -9,6 +9,30 @@
       "level": "Gold"
     },
     {
+      "name": "Tropical Evening",
+      "address": "6 Seacean Road",
+      "phone": "+889-635-4521",
+      "site": "dineUs@wayuisland.com",
+      "img": "./images/resortBground.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Island Explorations",
+      "address": "1 Inland Road",
+      "phone": "+665-632-7454",
+      "site": "inex@wayuisland.com",
+      "img": "./images/woven.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Mainland Merchants",
+      "address": "1-5 Traid Boardwalk",
+      "phone": "+753-951-8527",
+      "site": "outland@wayuisland.com",
+      "img": "./images/woven.jpg",
+      "level": "Silver"
+    },
+    {
       "name": "Shells for Shore",
       "address": "5 Seacean Road",
       "phone": "+789-w521-3652",
@@ -33,14 +57,6 @@
       "level": "Silver"
     },
     {
-      "name": "Tropical Evening",
-      "address": "6 Seacean Road",
-      "phone": "+889-635-4521",
-      "site": "dineUs@wayuisland.com",
-      "img": "./images/resortBground.jpg",
-      "level": "Gold"
-    },
-    {
       "name": "Clamming the Deep",
       "address": "1 Boardwalk Way",
       "phone": "+778-121-9653",
@@ -57,36 +73,20 @@
       "level": "Bronze"
     },
     {
-      "name": "Surf Shack",
-      "address": "8 Seacean Road",
-      "phone": "+854-563-5215",
-      "site": "surfer@wayuisland.com",
-      "img": "./images/woven.jpg",
-      "level": "NP"
-    },
-    {
-      "name": "Island Explorations",
-      "address": "1 Inland Road",
-      "phone": "+665-632-7454",
-      "site": "inex@wayuisland.com",
-      "img": "./images/woven.jpg",
-      "level": "Gold"
-    },
-    {
-      "name": "Mainland Merchants",
-      "address": "1-5 Traid Boardwalk",
-      "phone": "+753-951-8527",
-      "site": "outland@wayuisland.com",
-      "img": "./images/woven.jpg",
-      "level": "Silver"
-    },
-    {
       "name": "Fishin the Sea",
       "address": "2 Boardwalk Way",
       "phone": "+456-852-95154",
       "site": "fishnc@wayuisland.com",
       "img": "./images/woven.jpg",
       "level": "Bronze"
+    },
+    {
+      "name": "Surf Shack",
+      "address": "8 Seacean Road",
+      "phone": "+854-563-5215",
+      "site": "surfer@wayuisland.com",
+      "img": "./images/woven.jpg",
+      "level": "NP"
     },
     {
       "name": "Island Refuge",
