@@ -416,6 +416,44 @@ aside p {
   color: #000;
 }
 /*****************DIRECTORY CSS****************/
-.shops {
+#gridMode, #listMode {
+  background-color: var(--btnBground);
+  border: 2px solid var(--btnColor);
+  border-radius: 8px;
+  width: 3em;
+  height: 3em;
+  margin:  0 1em 1em ;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+/*****************GRID MODE*******************/
+.shops[name='grid'] section {
   text-align: center;
+  padding: 1em;
+}
+.shops[name='grid'] img {
+  width: 10em;
+  height: auto;
+  margin: auto;
+}
+/**************LIST MODE**********************/
+.shops[name='lst'] section {
+  margin: 0;
+  padding: 2%;
+  text-align: left; 
+}
+.shops[name='lst'] section:nth-child(even) {
+  background-color: #ecddc1;
+}
+.shops[name='lst'] h2 {
+  color: #000;
+  font-family: "Catamaran", cursive;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+.shops[name='lst'] img {
+  display: none;
 }

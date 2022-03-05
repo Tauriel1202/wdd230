@@ -13,7 +13,7 @@
       "address": "6 Seacean Road",
       "phone": "+889-635-4521",
       "site": "dineUs@wayuisland.com",
-      "img": "./images/resortBground.jpg",
+      "img": "./images/!!tropicalEvening.svg",
       "level": "Gold"
     },
     {
@@ -21,7 +21,7 @@
       "address": "1 Inland Road",
       "phone": "+665-632-7454",
       "site": "inex@wayuisland.com",
-      "img": "./images/woven.jpg",
+      "img": "./images/!!IEHiker.svg",
       "level": "Gold"
     },
     {
@@ -29,7 +29,7 @@
       "address": "1-5 Traid Boardwalk",
       "phone": "+753-951-8527",
       "site": "outland@wayuisland.com",
-      "img": "./images/woven.jpg",
+      "img": "./images/!!merchantShips.svg",
       "level": "Silver"
     },
     {

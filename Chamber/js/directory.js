@@ -14,6 +14,7 @@ function displayCos(co) {
   let img = document.createElement('img')
   let h2 = document.createElement('h2')
   let p = document.createElement('p')
+  let phone = document.createElement('p')
   let a = document.createElement('a')
 
   img.setAttribute('src', co.img)
@@ -23,15 +24,36 @@ function displayCos(co) {
 
   h2.textContent = co.name;
   p.textContent = co.address;
+  phone.textContent = co.phone;
   a.textContent = co.site;
 
   singleCo.appendChild(img)
   singleCo.appendChild(h2)
   singleCo.appendChild(p)
+  singleCo.appendChild(phone)
   singleCo.appendChild(a)
 
   shops.appendChild(singleCo)
 }
-// let img = document.createElement('img')
-// img.src = './images/resortBground.jpg'
-// shops.append(img)
+/*************LIST MODE JS***********/
+let gridBtn = document.querySelector('#gridMode')
+let listBtn = document.querySelector('#listMode')
+let onOff = document.querySelector('#on')
+
+function resize(){
+  if (window.innerWidth > 520 && window.innerWidth < 1021){
+    onOff.setAttribute('name', 'lst')
+  } 
+  else {
+    onOff.setAttribute('name', 'grid')
+  }
+}
+resize()
+window.onresize = resize
+
+listBtn.addEventListener('click', () => {
+  onOff.setAttribute('name', 'lst')
+})
+gridBtn.addEventListener('click', () => {
+  onOff.setAttribute('name', 'grid')
+})

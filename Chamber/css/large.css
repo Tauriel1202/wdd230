@@ -28,17 +28,17 @@
     max-width: 64rem;
   }
   /****************************************/
-  main section:nth-of-type(1),
-  main section:nth-of-type(2),
-  main section:nth-of-type(3),
-  main section:nth-of-type(4),
+  #normalContent section:nth-of-type(1),
+  #normalContent section:nth-of-type(2),
+  #normalContent section:nth-of-type(3),
+  #normalContent section:nth-of-type(4),
   #spot1,
   #spot2,
   #spot3,
   #join {
     margin: 0;
   }
-  main section:nth-of-type(2) {
+  #normalContent section:nth-of-type(2) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
@@ -53,14 +53,14 @@
     grid-column: 3 / 4;
     grid-row: 3 / 4;
   }
-  main section:nth-of-type(3) {
+  #normalContent section:nth-of-type(3) {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }
-  main section:nth-of-type(4) h2 {
+  #normalContent section:nth-of-type(4) h2 {
     padding-top: 2em;
   }
-  main section:nth-of-type(4) p {
+  #normalContent section:nth-of-type(4) p {
     padding-bottom: 5em;
   }
   #spot2 {
@@ -79,7 +79,7 @@
   #join p {
     padding-top: 5em;
   }
-  main section:nth-of-type(4) {
+  #normalContent section:nth-of-type(4) {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
   }
@@ -125,4 +125,18 @@
     width: 19.3em;
     margin: 0 auto;
   }
+/*************DIRECTORY CSS*****************/
+/*************GRID MODE CSS*****************/
+  .shops[name='grid'] {
+    max-width: 64rem;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+/*************LIST MODE CSS*****************/
+  .shops[name='lst'] {
+    max-width: 64rem;
+  }
+
+
 } /**<--This bracket is VERY IMPORTANT!!! DO NOT IGNORE!!!*/
