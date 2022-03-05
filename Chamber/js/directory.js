@@ -25,7 +25,9 @@ function displayCos(co) {
   h2.textContent = co.name;
   p.textContent = co.address;
   phone.textContent = co.phone;
+
   a.textContent = co.site;
+  a.setAttribute('href', '#')
 
   singleCo.appendChild(img)
   singleCo.appendChild(h2)
