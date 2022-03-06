@@ -296,6 +296,14 @@ footer a {
   font-size: 1.3em;
   text-align: center;
 }
+.up {
+  background-color: var(--btnBground);
+  border: 2px solid var(--btnColor);
+  border-radius: 10px;
+  color: #000;
+  padding: 0.3em;
+  margin: left;
+}
 /********************JOIN CSS**************************/
 fieldset h2 {
   font-size: 1.4em;
@@ -434,10 +442,13 @@ aside p {
   padding: 1em;
 }
 .shops[name='grid'] img {
-  width: 10em;
+  width: 50%;
   height: auto;
   margin: auto;
 }
+  .shops[name='grid'] section:nth-of-type(9) img {
+    width: 100%;
+  } 
 /**************LIST MODE**********************/
 .shops[name='lst'] section {
   margin: 0;
@@ -456,4 +467,8 @@ aside p {
 }
 .shops[name='lst'] img {
   display: none;
+}
+
+#remove {
+  background-color: green;
 }
