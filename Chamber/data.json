@@ -77,7 +77,7 @@
       "address": "2 Boardwalk Way",
       "phone": "+456-852-95154",
       "site": "fishnc@wayuisland.com",
-      "img": "./images/!!fishin.svg",
+      "img": "./images/zFish.jpg",
       "level": "Bronze"
     },
     {
@@ -85,7 +85,7 @@
       "address": "8 Seacean Road",
       "phone": "+854-563-5215",
       "site": "surfer@wayuisland.com",
-      "img": "./images/!!surfShack.svg",
+      "img": "./images/zSurf.spg",
       "level": "NP"
     },
     {
@@ -93,7 +93,7 @@
       "address": "2 Inland Road",
       "phone": "+123-201-0021",
       "site": "save@wayuisland.com",
-      "img": "./images/!!isleRefuge.svg",
+      "img": "./images/zRefuge.jpg",
       "level": "NP"
     }
   ]
