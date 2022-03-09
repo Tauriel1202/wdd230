@@ -79,7 +79,8 @@
     text-align: center;
     padding-top: 1.5em;
   }
-  #normalContent section:nth-of-type(2), #normalContent section:nth-of-type(3) {
+  /* #normalContent section:nth-of-type(2),*/ 
+  #normalContent section:nth-of-type(3) { 
     grid-row: 6 / 7;
     margin: 1%;
   }
@@ -149,29 +150,29 @@
   }
 /*****************DIRECTORY CSS****************/
 /*****************GRID MODE CSS****************/
-  .shops[name='grid'] {
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .shops[name='grid'] section {
+  .grid section {
     margin: 0.5%;
   }
-  .shops[name='grid'] section:nth-child(1) {
+  .grid section:nth-child(1) {
     grid-column: 1 / 2;
   }
-  .shops[name='grid'] section:nth-child(2) {
+  .grid section:nth-child(2) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
-  .shops[name='grid'] section:nth-child(3) {
+  .grid section:nth-child(3) {
     grid-row: 2 / 3; 
   }
-  .shops[name='grid'] section:nth-child(4) {
+  .grid section:nth-child(4) {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
 /****************LIST MODE CSS***************/
-  .shops[name='lst'] section {
+  .lst section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }

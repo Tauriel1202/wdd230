@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Chamber of Commerce Home" />
+
+    <title>Gradient</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/small.css" />
+  </head>
+  <body>
+    <main>
+      <style>
+        p {
+          text-align: center;
+          border: 1px solid black;
+          padding: 2em;
+        }
+        p:nth-of-type(1) {
+          background-image: linear-gradient(90deg, #f8f6f1, #007a54);
+          /* background-image: radial-gradient(red, white, green); */
+          /* background-image: conic-gradient(rgb(255, 78, 166), red, orange, yellow, green, blue, purple, rgb(255,78,166));
+          color: #fff; */
+        }
+        p:nth-of-type(2) {
+          /* background-image: linear-gradient(90deg, #f8f6f1, #007a54); */
+          background-image: radial-gradient(circle, red 5%, white 15%, green 60%);
+          /* background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg); */
+        }
+        p:nth-of-type(3) {
+          /* background-image: linear-gradient(45deg, #f8f6f1, #ccffcc , #007a54); */
+          /* background-image: radial-gradient(circle, red 60%, white 15%, green 5%); */
+          background-image: conic-gradient(from 90deg, red, yellow, green);
+        }
+        p:nth-of-type(4) {
+          /* background-image: linear-gradient(90deg, #f8f6f1, #007a54, #f8f6f1); */
+          /* background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black); */
+          background-image: repeating-conic-gradient(red 10%, yellow 20%);
+        }
+        p:nth-of-type(5) {
+          background-image: repeating-radial-gradient(purple, blue 10%, black 15%);
+          color: #fff;
+        }
+
+      </style>
+      <p>background-image: linear-gradient(90deg, #f8f6f1, #007a54);
+        <!-- background-image: radial-gradient(red, white, green); -->
+        <!-- /* background-image: conic-gradient(rgb(255, 78, 166), red, orange, yellow, green, blue, purple, rgb(255,78,166)); -->
+      </p>
+      <p>
+        <!-- background-image: linear-gradient(90deg, #f8f6f1, #007a54);  -->
+        background-image: radial-gradient(circle, red 5%, white 15%, green 60%);
+        <!-- background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg); -->
+      </p>
+      <p>
+        <!-- background-image: linear-gradient(45deg, #f8f6f1, #007a54); -->
+        <!-- background-image: radial-gradient(circle, red, white, green); -->
+        background-image: conic-gradient(from 90deg, red, yellow, green);
+      </p>
+      <p>
+        <!-- background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black); -->
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+      </p>
+      <p>background-image: repeating-radial-gradient(purple, blue 10%, black 15%);</p>
+    </main>
+  </body>
+</html>

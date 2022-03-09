@@ -20,14 +20,14 @@
     row-gap: 0.4em;
   } 
   /*********************REMOVE THIS********/
-  #falseImg {
+  /* #falseImg {
     display: flex;
     justify-content: center;
   }
   #falseImg img {
     max-width: 64rem;
-  }
-  /****************************************/
+  } */
+  /****************************************/ 
   #normalContent section:nth-of-type(1),
   #normalContent section:nth-of-type(2),
   #normalContent section:nth-of-type(3),
@@ -37,25 +37,25 @@
   #spot3,
   #join {
     margin: 0;
-  }
-  #normalContent section:nth-of-type(2) {
+  } 
+  #events { 
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
   #hero {
-    grid-column: 2 / 3;
-    grid-row: 3 / 5;
+    grid-column: 2 / 3 !important;
+    grid-row: 2 / 4;
   }
   #hero2 {
-    display: grid;
+    display: block;
   }
   #spot1 {
     grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
   #normalContent section:nth-of-type(3) {
     grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
   }
   #normalContent section:nth-of-type(4) h2 {
     padding-top: 2em;
@@ -65,11 +65,11 @@
   }
   #spot2 {
     grid-column: 3 / 4;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
   }
   #join {
     grid-column: 1 / 2;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
     padding-top: 5em;
   }
   #join h2 {
@@ -81,12 +81,12 @@
   }
   #normalContent section:nth-of-type(4) {
     grid-column: 2 / 3;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
   }
   #spot3 {
     display: block;
     grid-column: 3 / 4;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
   }
  #spot3 h2 {
    margin: 0;
@@ -127,19 +127,19 @@
   }
 /*************DIRECTORY CSS*****************/
 /*************GRID MODE CSS*****************/
-  .shops[name='grid'] {
+  .grid {
     max-width: 64rem;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
   }
-  .shops[name='grid'] section:nth-child(3) p, .shops[name='grid'] section:nth-child(3) a {
+  .grid section:nth-child(3) p, .grid section:nth-child(3) a {
     line-height: 0;
   }
-  .shops[name='grid'] section:nth-child(3) h2 {
+  .grid section:nth-child(3) h2 {
     margin: 0;
   }
 /*************LIST MODE CSS*****************/
-  .shops[name='lst'] {
+  .lst {
     max-width: 64rem;
     margin: auto;
   }

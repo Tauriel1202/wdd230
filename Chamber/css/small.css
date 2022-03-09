@@ -143,18 +143,18 @@ nav ul {
   margin: auto;
   list-style-type: none;
 }
-/***************************MAIN CSS *****************************/
+/***************************#normalContentCSS *****************************/
 /*************************Temporary CSS**********/
 #falseImg img {
   width: 100%;
 }
 /************************************************/
-main {
+#normalContent{
   margin: 2%;
 }
-main section:nth-child(3),
-main section:nth-child(4),
-main section:nth-child(5),
+#normalContent section:nth-child(3),
+#normalContent section:nth-child(4),
+#normalContent section:nth-child(5),
 #spot1,
 #spot2,
 #spot3 {
@@ -168,7 +168,7 @@ main section {
   margin-bottom: 2%;
   display: grid;
 }
-main section:nth-child(2) {
+#normalContent section:nth-child(2) {
   position: relative;
 }
 #heroP {
@@ -302,7 +302,6 @@ footer a {
   border-radius: 10px;
   color: #000;
   padding: 0.3em;
-  margin: left;
 }
 /********************JOIN CSS**************************/
 fieldset h2 {
@@ -437,34 +436,35 @@ aside p {
   justify-content: center;
 }
 /*****************GRID MODE*******************/
-.shops[name='grid'] section {
+.grid section {
   text-align: center;
   padding: 1em;
 }
-.shops[name='grid'] img {
+.grid img {
   width: 50%;
   height: auto;
   margin: auto;
 }
-  .shops[name='grid'] section:nth-of-type(9) img {
+  .grid section:nth-of-type(9) img {
     width: 100%;
   } 
 /**************LIST MODE**********************/
-.shops[name='lst'] section {
+.lst section {
   margin: 0;
-  padding: 2%;
+  padding: 2% ;
   text-align: left; 
+  border: 1px solid green;
 }
-.shops[name='lst'] section:nth-child(even) {
+.lst section:nth-child(even) {
   background-color: #ecddc1;
 }
-.shops[name='lst'] h2 {
+.lst h2 {
   color: #000;
   font-family: "Catamaran", cursive;
   font-size: 1em;
   font-weight: 400;
   margin: 0;
 }
-.shops[name='lst'] img {
+.lst img {
   display: none;
 }

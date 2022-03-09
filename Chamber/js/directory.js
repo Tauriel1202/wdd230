@@ -46,19 +46,19 @@ let onOff = document.querySelector("#on");
 
 function resize() {
   if (window.innerWidth > 520 && window.innerWidth < 1021) {
-    onOff.setAttribute("name", "lst");
+    onOff.setAttribute("class", "lst");
   } else {
-    onOff.setAttribute("name", "grid");
+    onOff.setAttribute("class", "grid");
   }
 }
 resize();
 window.onresize = resize;
 
 listBtn.addEventListener("click", () => {
-  onOff.setAttribute("name", "lst");
+  onOff.setAttribute("class", "lst");
 });
 gridBtn.addEventListener("click", () => {
-  onOff.setAttribute("name", "grid");
+  onOff.setAttribute("class", "grid");
 });
 
 function lazyload() {
