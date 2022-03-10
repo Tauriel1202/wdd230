@@ -453,7 +453,6 @@ aside p {
   margin: 0;
   padding: 2% ;
   text-align: left; 
-  border: 1px solid green;
 }
 .lst section:nth-child(even) {
   background-color: #ecddc1;
