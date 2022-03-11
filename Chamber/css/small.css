@@ -1,8 +1,8 @@
 :root {
-   --btnBground: #65e77f;
-   --btnColor: #1ea539; 
-  }
-
+  --btnBground: #65e77f;
+  --btnColor: #1ea539;
+}
+/*#region Setup*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -15,6 +15,7 @@
 body {
   font-size: 0.9em;
 }
+/*********Fonts*****************/
 h1,
 h2 {
   font-family: "Architects Daughter", cursive;
@@ -25,10 +26,13 @@ nav {
   font-family: "Catamaran", cursive;
   text-decoration: none;
 }
+/*#endregion Setup*/
+/* *************HEADER CSS********** */
+/*#region Header*/
 header {
   background-image: linear-gradient(180deg, #fff, #5cc8ff);
   display: grid;
-  grid-template-columns: 1fr 2fr 0 1fr;
+  grid-template-columns: 1fr 2fr 10%;
 }
 #msg {
   background-image: linear-gradient(
@@ -50,26 +54,47 @@ header img {
   width: 100%;
   height: auto;
   border-radius: 100px;
-  margin: 1em;
 }
-header div {
-  width: 100%;
-  height: auto;
-  margin: 1.3em 2% 2% 0;
-}
-header h1 {
-  font-size: 1.4em;
-  text-align: left;
-  margin-top: 1.3em;
-  margin-left: 1em;
-  padding: 0.2em;
-}
-header h2 {
-  font-size: 1.2em;
-  text-align: center;
-  grid-column: 1 / 5;
+header #pic {
+  width: 10em;
+  grid-row: 1 / 3;
+  padding: 0.5em;
+  padding-top: 1em;
 }
 #social {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 2.8em;
+  padding-top: 0.6em;
+}
+#in {
+  width: 1.60em;
+}
+#fb, #in {
+  margin-right: 1em;
+}
+header h1 {
+  text-align: left;
+  font-size: 1.3em;
+  margin-left: 3%;
+  margin-bottom: 0;
+}
+header h2 {
+  text-align: left;
+  font-size: 1.1em;
+  font-style: italic;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}
+.date {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center; 
+  grid-column: 1 / 4;
+  padding: 2% 0;
+}
+/*#social {
   margin-right: 1em;
   grid-column: 3 / 4;
   display: grid;
@@ -93,7 +118,10 @@ header p {
   margin: 0.5em;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1.2px solid rgba(0, 0, 0, 0.3);
-}
+}*/
+/*#endregion Header*/
+/*************************NAVIGATION CSS**************************/
+/*#region Nav*/
 header button {
   font-size: 2em;
   color: #fff;
@@ -101,12 +129,9 @@ header button {
   border: none;
 }
 nav {
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.1);
-}
-nav ul {
-  display: none;
 }
 nav ul li {
   padding: 0.5em;
@@ -121,20 +146,15 @@ nav li:hover {
 nav ul li.active {
   background-color: var(--btnBground);
 }
-nav ul.open {
-  display: block;
-}
-#btn span:nth-child(1) {
-  display: block;
-}
-#btn span:nth-child(2) {
-  display: none;
-}
-#btn.open span:nth-child(1) {
-  display: none;
-}
+nav ul.open,
+#btn span:nth-child(1),
 #btn.open span:nth-child(2) {
   display: block;
+}
+#btn span:nth-child(2),
+#btn.open span:nth-child(1),
+nav ul {
+  display: none;
 }
 nav ul {
   background-color: #f764b7;
@@ -143,13 +163,15 @@ nav ul {
   margin: auto;
   list-style-type: none;
 }
-/***************************#normalContentCSS *****************************/
-/*************************Temporary CSS**********/
+/*#endregion Nav*/
+/***************************MAIN CSS *****************************/
+/*************************Temporary CSS***************************/
 #falseImg img {
   width: 100%;
 }
-/************************************************/
-#normalContent{
+/**********************Normal Content for Main********************/
+/*#region Main*/
+#normalContent {
   margin: 2%;
 }
 #normalContent section:nth-child(3),
@@ -158,7 +180,7 @@ nav ul {
 #spot1,
 #spot2,
 #spot3 {
-  padding: 2em ;
+  padding: 2em;
   text-align: center;
 }
 main section {
@@ -181,14 +203,14 @@ main section {
     #feffb9
   );
   color: #0a0a0a;
-  font-size: 1.3em;;
+  font-size: 1.3em;
   position: absolute;
   padding: 0.5em;
 }
 #heroA {
   background-color: var(--btnBground);
   color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px; 
+  border-radius: 10px;
   border: 3.5px solid var(--btnColor);
   position: absolute;
   padding: 0.5em;
@@ -212,12 +234,12 @@ section img {
 }
 #weather p {
   font-size: 3em;
-  grid-column: 2 / 3; 
+  grid-column: 2 / 3;
   margin: auto;
   padding: 0.6em;
 }
 section h2 {
-  color: #002B8F;
+  color: #002b8f;
   font-weight: 600;
   margin-bottom: 3%;
 }
@@ -229,24 +251,29 @@ section:nth-of-type(3) h3 {
   padding: 4%;
   margin: 1em;
 }
-#spot1 p:nth-of-type(1), #spot2 p:nth-of-type(1), #spot3 p:nth-of-type(1) {
+#spot1 p:nth-of-type(1),
+#spot2 p:nth-of-type(1),
+#spot3 p:nth-of-type(1) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: 2% 0;
   margin: 2% 0;
 }
-
-/****************Display in Larger View ***********************/
-#join, #spot3, #hero2 {
+/*#endregion Main*/
+/*********************Display in Larger View *********************/
+#join,
+#spot3,
+#hero2 {
   display: none;
 }
-/*****************************FOOTER CSS **************************************/
-
+/**************************FOOTER CSS ***************************/
+/*#region footer*/
 footer {
   background-image: linear-gradient(180deg, #fff, #5cc8ff, #0ac6ff, #05acff);
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
   border-top: 2px dashed #f8f6f1;
+  margin-top: 2em;
 }
 footer a img {
   border-radius: 180px;
@@ -262,7 +289,9 @@ footer a {
   text-decoration: none;
   color: #000;
 }
-/**************DISCOVER CSS*****************************/
+/*#endregion footer*/
+/***********************DISCOVER CSS*****************************/
+/*#region Discover*/
 #heading {
   text-align: center;
 }
@@ -273,7 +302,7 @@ footer a {
 #discoverCards article {
   text-align: center;
   background-color: #000;
-  border-radius: 1em;;
+  border-radius: 1em;
   margin-bottom: 2em;
 }
 #discoverCards img {
@@ -296,19 +325,22 @@ footer a {
   font-size: 1.3em;
   text-align: center;
 }
-.up {
+.toTop {
   background-color: var(--btnBground);
   border: 2px solid var(--btnColor);
   border-radius: 10px;
   color: #000;
   padding: 0.3em;
 }
-/********************JOIN CSS**************************/
+/*#endregion Discover*/
+/*************************JOIN CSS*******************************/
+/*#region Join*/
 fieldset h2 {
   font-size: 1.4em;
   padding: 0.2em 0 0.1em;
 }
-#levelsBelow, #levelsSide {
+#levelsBelow,
+#levelsSide {
   font-size: 1em;
   margin-bottom: 1em;
 }
@@ -323,7 +355,9 @@ form {
 fieldset {
   border: none;
 }
-form label.app, form label.ship, form label.app input {
+form label.app,
+form label.ship,
+form label.app input {
   display: block;
 }
 form label.app input {
@@ -344,12 +378,12 @@ form label.app:nth-child(8) input {
 form label.ship {
   padding: 0.5em;
 }
-form label input[type='submit'] {
+form label input[type="submit"] {
   background-color: #65e77f;
   padding: 0.5em 1em;
   border: 2px solid #1ea539;
   border-radius: 10px;
-  margin: 0 0 0.6em 2% ;
+  margin: 0 0 0.6em 2%;
 }
 aside h2 {
   margin: 1em 0 0.3em 0;
@@ -359,7 +393,7 @@ aside h3 {
   margin: 0.3em 0;
 }
 aside div {
-  display: grid; 
+  display: grid;
 }
 aside div img {
   margin: 0.3em 2% 0em 0;
@@ -393,11 +427,13 @@ aside p {
 #joinImg {
   display: none;
 }
-/*****************Thanks CSS**************/
+/*#endregion Join*/
+/***********************THANKS CSS*******************************/
+/*#region Thanks*/
 #thankYou h1 {
   border: 2px solid #f764b7;
   border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-align: center;
   padding: 1em;
@@ -422,14 +458,17 @@ aside p {
 #thankYou #next li a {
   color: #000;
 }
-/*****************DIRECTORY CSS****************/
-#gridMode, #listMode {
+/*#endregion Thanks*/
+/*********************DIRECTORY CSS******************************/
+/*#region Directory*/
+#gridMode,
+#listMode {
   background-color: var(--btnBground);
   border: 2px solid var(--btnColor);
   border-radius: 8px;
   width: 3em;
   height: 3em;
-  margin:  0 1em 1em ;
+  margin: 0 1em 1em;
 }
 .btns {
   display: flex;
@@ -445,14 +484,14 @@ aside p {
   height: auto;
   margin: auto;
 }
-  .grid section:nth-of-type(9) img {
-    width: 100%;
-  } 
+.grid section:nth-of-type(9) img {
+  width: 100%;
+}
 /**************LIST MODE**********************/
 .lst section {
   margin: 0;
-  padding: 2% ;
-  text-align: left; 
+  padding: 2%;
+  text-align: left;
 }
 .lst section:nth-child(even) {
   background-color: #ecddc1;
@@ -467,3 +506,4 @@ aside p {
 .lst img {
   display: none;
 }
+/*#endregion Join*/

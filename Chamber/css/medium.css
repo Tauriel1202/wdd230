@@ -1,40 +1,24 @@
 @media only screen and (min-width: 32.5em){
+/*#region Header*/
   header {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    column-gap: 2%;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
   }
-  header h1, header h2 {
-    text-align: left;
-    margin-right: 0;
-  }
-  header h2 {
-    margin-left: 14%;
-  }
-  #pic img {
-    min-width: 2em;
+  header h1 {
+    margin-left: 0;
   }
   #social {
-    display: flex;
+    grid-column: 5 / 6;
   }
-  #social img {
-    width: 80%;
+  .date, nav {
+    grid-column: 1 /6;
   }
-  #fb {
-    width: 100%;
-  }
-  #in {
-    width: 100%;
-  }
-  h2 {
-    margin-left: 1.4em;
-  }
-  /*******Change this back to MAIN**********/
+/*#endregion Header*/
+/*****************MAIN CSS******************/
+/*#region Main*/
   #normalContent {
     display: grid;
     column-gap: 2%;
   }
-  /****************************************/
   #heroP, #spot1 h2, #spot2 h2 {
     margin: 0;
   }
@@ -84,7 +68,9 @@
     grid-row: 6 / 7;
     margin: 1%;
   }
-  /***************Footer CSS******************/
+/*#endregion Main*/
+/***************Footer CSS******************/
+/*#region Footer*/
   footer {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -113,7 +99,9 @@
     grid-column: 1 / 5;
     text-align: center;
   }
-  /*******************DISCOVER CSS*****************/
+/*#endregion Footer*/
+/**************DISCOVER CSS*****************/
+/*#region Discover*/
   #discoverP {
     max-width: 700px;
     margin: 2em auto;
@@ -125,7 +113,9 @@
   #discoverCards article:hover {
     border: 5.0px solid #65e77f;
   }
-  /**********************JOIN CSS********************/
+/*#endregion Discover*/
+/***************JOIN CSS********************/
+/*#region Join*/
   #joinH1 {
     margin: 0 auto;
     text-align: center;
@@ -148,7 +138,9 @@
   #thankYou button {
     margin-left: 1%;
   }
-/*****************DIRECTORY CSS****************/
+/*#endregion Join*/
+/**************DIRECTORY CSS****************/
+/*#region Directory*/
 /*****************GRID MODE CSS****************/
   .grid {
     display: grid;
@@ -176,5 +168,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  
+  /*#endregion Directory*/
+
+
+
 } /*<-----VERY VERY VERY IMPORTANT!!!

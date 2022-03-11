@@ -1,4 +1,10 @@
 @media only screen and (min-width: 64em) {
+  header #pic {
+    margin-left: 1em;
+  }
+  .date {
+    padding: 1%;
+  }
   #hamBtn {
     display: none;
   }
@@ -12,14 +18,18 @@
   nav {
     padding: 0;
   }
-  #normalContent {
-    max-width: 64rem;
-    margin: auto;
+/***************MAIN CSS****************/
+/*#region Main*/
+main {
+  max-width: 64rem;
+  margin: auto;
+}
+#normalContent {
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 0.4em;
     row-gap: 0.4em;
   } 
-  /*********************REMOVE THIS********/
+/*********************REMOVE THIS********/
   /* #falseImg {
     display: flex;
     justify-content: center;
@@ -27,7 +37,7 @@
   #falseImg img {
     max-width: 64rem;
   } */
-  /****************************************/ 
+/****************************************/ 
   #normalContent section:nth-of-type(1),
   #normalContent section:nth-of-type(2),
   #normalContent section:nth-of-type(3),
@@ -42,8 +52,8 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
-  #hero {
-    grid-column: 2 / 3 !important;
+  #normalContent section:nth-of-type(1) {
+    grid-column: 2 / 3 ;
     grid-row: 2 / 4;
   }
   #hero2 {
@@ -91,9 +101,14 @@
  #spot3 h2 {
    margin: 0;
  }
- /***************DISCOVER CSS*************/ 
- /****************************************/
-  /***************JOIN CSS*****************/
+ /*#endregion Main*/
+/***************DISCOVER CSS*************/ 
+/****************************************/
+/***************JOIN CSS*****************/
+/*#region Join*/
+  #joinH1 {
+    margin-top: 1em;
+  }
   #joinContent {
     max-width: 70em;
     margin: auto;
@@ -125,7 +140,9 @@
     width: 19.3em;
     margin: 0 auto;
   }
+/*#endregion Join*/
 /*************DIRECTORY CSS*****************/
+/*#region Directory*/
 /*************GRID MODE CSS*****************/
   .grid {
     max-width: 64rem;
@@ -143,6 +160,7 @@
     max-width: 64rem;
     margin: auto;
   }
+/*#endregion Directory*/
 
 
 } /**<--This bracket is VERY IMPORTANT!!! DO NOT IGNORE!!!*/
