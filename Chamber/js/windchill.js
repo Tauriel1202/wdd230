@@ -1,5 +1,5 @@
 const url =
-  "http://api.openweathermap.org/data/2.5/forecast?id=2080185&units=imperial&appid=920c6288bdbd30f49daec29c2657439c";
+  "https://api.openweathermap.org/data/2.5/forecast?id=2080185&units=imperial&appid=920c6288bdbd30f49daec29c2657439c";
 const temp = document.querySelector("#temp");
 const humidity = document.querySelector("#humidity");
 const speed = document.querySelector("#speed");
