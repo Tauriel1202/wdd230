@@ -63,11 +63,9 @@ if ("IntersectionObserver" in window) {
 /**********************LAST VISIT************************/
 const visit = document.querySelector("#visit");
 const lv = Number(localStorage.getItem("visits-ls"));
-console.log(lv);
 const today = Date.now();
 const msInDay = 1000 * 60 * 60 * 24;
 let timeSince = Math.round((today - lv) / msInDay);
-console.log(timeSince);
 
 localStorage.setItem("visits-ls", today);
 
@@ -86,5 +84,4 @@ function formTime() {
   let formTime = (`${newDate(currentD)} ${currentD.getHours()}:${currentD.getMinutes()}`)
   document.getElementById("t").value = formTime;
   
-  console.log(formTime)
 }
