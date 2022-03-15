@@ -1,16 +1,23 @@
 @media only screen and (min-width: 32.5em){
 /*#region Header*/
-  .headerOrg {
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+  #msg {
+    grid-column: 1 / 8;
+    padding: 0.5em;
   }
-  header h1 {
-    margin-left: 0;
+  header h1, #slogan {
+    text-align: center;
+    grid-column: 2 / 4;
+  }
+  div#pic {
+    padding: 0.5em;
+    margin-left: 1em;
+    grid-column: 1 / 2;
   }
   #social {
-    grid-column: 5 / 6;
+    grid-column: 7 / 8;
   }
   .date, nav {
-    grid-column: 1 /6;
+    grid-column: 1 / 8;
   }
 /*#endregion Header*/
 /*****************MAIN CSS******************/
@@ -76,6 +83,7 @@ footer {
 }
 footer p:nth-of-type(1) {
   text-align: left;
+  grid-column: 2 / 4;
 }
 footer p:nth-of-type(2) {
   grid-column: 4 / 5;
