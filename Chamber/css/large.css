@@ -1,4 +1,9 @@
 @media only screen and (min-width: 64em) {
+  header h1, #slogan {
+    margin-left: 0;
+    grid-column: 2 / 4;
+    text-align: left;
+  }
   header #pic {
     margin-left: 1em;
   }
