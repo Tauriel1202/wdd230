@@ -28,6 +28,9 @@ fetch(url)
 
     weatherImg.src = iconUrl;
     weatherImg.alt = current;
+    weatherImg.width = 100;
+    weatherImg.height = 100;
+
     mainImg.append(weatherImg);
 
     if (t <= 50 && s > 3) {

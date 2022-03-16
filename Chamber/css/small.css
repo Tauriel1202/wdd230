@@ -68,11 +68,8 @@ header #pic {
   grid-row: 2 / 3;
   display: flex;
   flex-wrap: wrap;
-  width: 2.8em;
+  width: 3.7em;
   padding-top: 0.6em;
-}
-#in {
-  width: 1.60em;
 }
 #fb, #in {
   margin-right: 1em;
