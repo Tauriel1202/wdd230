@@ -18,7 +18,7 @@ body {
 /*********Fonts*****************/
 h1,
 h2 {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Architects Daughter", 'Times New Roman', Times, serif;
 }
 a,
 p,
@@ -62,10 +62,11 @@ header #pic {
   grid-row: 2 / 4;
   padding: 0.5em;
   padding-top: 1em;
+  grid-row: 2 / 4;
 }
 #social {
   grid-column: 4 / 5;
-  grid-row: 2 / 3;
+  grid-row: 2 / 4;
   display: flex;
   flex-wrap: wrap;
   width: 3.7em;
@@ -77,23 +78,23 @@ header #pic {
 header h1 {
   text-align: left;
   font-size: 1.3em;
-  margin-left: 3%;
-  margin-bottom: 0;
   grid-column: 2 / 4;
-  grid-row: 2 / 3;;
+  grid-row: 2 / 3;
   margin: auto;
+  margin-top: 1em;
 }
 #slogan {
   text-align: left;
   font-size: 1.1em;
   font-style: italic;
   grid-row: 3 / 4;
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 .date {
   border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center; 
   grid-column: 1 / 5;
+  grid-row: 4 / 5;
   padding: 2% 0;
 }
 /*#endregion Header*/
@@ -107,6 +108,7 @@ header button {
 }
 nav {
   grid-column: 1 / 5;
+  grid-row: 5 / 6;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.1);
 }
