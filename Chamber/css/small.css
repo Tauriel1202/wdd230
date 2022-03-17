@@ -29,7 +29,7 @@ nav {
 /*#endregion Setup*/
 /* *************HEADER CSS********** */
 /*#region Header*/
-.headerOrg {
+header {
   background-image: linear-gradient(180deg, #fff, #5cc8ff);
   display: grid;
 }
@@ -42,7 +42,7 @@ nav {
     #fcff5c,
     #feffb9
   );
-  grid-column: 1 / 5;
+  grid-column: 1 / 3;
   text-align: center;
   padding: 0.5em;
 }
@@ -50,7 +50,11 @@ nav {
   display: inline;
 }
 .hide {
-  display: none;
+  display: inline;
+}
+.limited {
+  grid-column: 1 / 3;
+  display: grid;
 }
 header img {
   width: 100%;
@@ -59,14 +63,14 @@ header img {
 }
 header #pic {
   width: 10em;
-  grid-row: 2 / 4;
+  grid-row: 1 / 3;
   padding: 0.5em;
   padding-top: 1em;
-  grid-row: 2 / 4;
+  grid-row: 1 / 3;
 }
 #social {
   grid-column: 4 / 5;
-  grid-row: 2 / 4;
+  grid-row: 1 / 3;
   display: flex;
   flex-wrap: wrap;
   width: 3.7em;
@@ -79,21 +83,21 @@ header h1 {
   text-align: left;
   font-size: 1.3em;
   grid-column: 2 / 4;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
   margin: auto;
   margin-top: 1em;
 }
-#slogan {
+.slogan {
   text-align: left;
   font-size: 1.1em;
   font-style: italic;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   grid-column: 2 / 4;
 }
 .date {
   border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center; 
-  grid-column: 1 / 5;
+  grid-column: 1 / 3;
   grid-row: 4 / 5;
   padding: 2% 0;
 }
@@ -107,7 +111,7 @@ header button {
   border: none;
 }
 nav {
-  grid-column: 1 / 5;
+  grid-column: 1 / 3;
   grid-row: 5 / 6;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.1);
@@ -159,7 +163,6 @@ nav ul {
 }
 main section {
   background-color: #ffeed0;
-  /*width: 100%;*/
   border: 2px solid #ffeed0;
   margin-bottom: 2%;
   display: grid;
@@ -217,13 +220,9 @@ section h2 {
   font-weight: 600;
   margin-bottom: 3%;
 }
-section h3 {
-  margin-bottom: 10%;
-}
-section:nth-of-type(3) h3 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 4%;
+#currentWeather {
   margin: 1em;
+  font-size: 1.3em;
 }
 #spot1 p:nth-of-type(1),
 #spot2 p:nth-of-type(1),
@@ -246,6 +245,8 @@ section:nth-of-type(3) h3 {
 /*#region footer*/
 footer {
   background-image: linear-gradient(180deg, #fff, #5cc8ff, #0ac6ff, #05acff);
+}
+.max {  
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
@@ -448,6 +449,9 @@ aside p {
 .btns {
   display: flex;
   justify-content: center;
+}
+button:hover {
+  background-image: linear-gradient(90deg, #fff, #fcff5c, #fff);
 }
 /*****************GRID MODE*******************/
 .grid section {

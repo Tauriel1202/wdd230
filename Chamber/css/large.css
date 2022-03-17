@@ -1,7 +1,10 @@
 @media only screen and (min-width: 64em) {
-  header h1, #slogan {
+  .limited {
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    margin: auto;
+  }
+  header h1, .slogan {
     margin-left: 0;
-    grid-column: 2 / 4;
     text-align: left;
   }
   header #pic {
@@ -99,7 +102,11 @@ main {
  }
  /*#endregion Main*/
 /**************FOOTER CSS****************/
-
+.max {
+  grid-template-columns: 1fr 1fr 60% 1fr;
+  max-width: 64rem;
+  margin: auto;
+}
  /***************DISCOVER CSS*************/ 
 /****************************************/
 /***************JOIN CSS*****************/
