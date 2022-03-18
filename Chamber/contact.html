@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wayu-Wayu Chamber of Commerce Home page. See spotlighted businesses, 
+      check the weather, see upcoming events, and see how you can join the Chamber."
+    />
+
+    <title>Wayu-Wayu Chamber of Commerce</title>
+
+    <link rel="shortcut icon" href="images/wwccFavicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/small.css" />
+    <link rel="stylesheet" type="text/css" href="css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="css/large.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p id="msg">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </p>
+      <div class="limited">
+        <div id="pic">
+          <a href="index.html"
+            ><img
+              src="images/wwLOGOpngBASED.webp"
+              alt="Wayu-Wayu Island Chamber of Commerce Logo"
+              width="200"
+              height="123"
+          /></a>
+        </div>
+        <h1>Wayu-Wayu Chamber of Commerce</h1>
+        <div id="social">
+          <a href="https://www.facebook.com/" id="fb">
+            <img
+              src="images/fb.png"
+              alt="facebook icon"
+              width="100"
+              height="100"
+            />
+          </a>
+          <a href="https://www.linkedin.com/" id="in">
+            <img
+              src="images/in.svg"
+              alt="linkedin icon"
+              width="100"
+              height="100"
+            />
+          </a>
+        </div>
+        <p class="slogan">Sand, Surf, and Sunshine</p>
+      </div>
+      <p class="date"></p>
+      <nav>
+        <button id="hamBtn">&#9776;</button>
+        <ul id="headerNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contactContent">
+      <h1>Contact Us!</h1>
+      <article class="ccContact">
+        <h2>Wayu-Wayu Chamber of Commerce</h2>
+        <p>2 Seacean Road, Wayu-Wayu Island</p>
+        <p>info.wayuislandcc.org<br />+(007) 1200-3252</p>
+        <h3>Office Hours</h3>
+        <p>Monday-Friday: 10AM-5PM</p>
+      </article>
+      <article class="contactPoints">
+        <h2>* Points of Contact *</h2>
+        <p><em>Ila Ransi</em><br />CEO and Director<br /><a href='#'>wwceo@wayuislandcc.org</a></p>
+        <h3>❓ General Chamber Inquiries ❓</h3>
+        <p><em>Enoha Cersua</em><br />Customer Service<br /><a href='#'>enoha@wayuislandcc.org</a></p>
+        <h3>🏅 Membership Inquiries 🏅</h3>
+        <p>
+          <em>Leilani Presia</em><br />VP of Membership<br /><a href='#'>leisiavp@wayuislandcc.org</a>
+        </p>
+        <h3>🛫 Event and Tourism Inquiries 🌴</h3>
+        <p>
+          <em>Talia Serpesinuia</em><br />Event Director<br /><a href='#'>taliserevents@wayuislandcc.org</a>
+        </p>
+        <h3>🛒 Marketing Inquiries 🎨</h3>
+        <p>
+          <em>Kelii Andida</em><br />Chief of Marketing<br /><a href='#'>chiefkandida@wayuislandcc.org</a>
+        </p>
+        <h3>🌊 Environmental Inquiries 🦎</h3>
+        <p>
+          <em>Kaikani Bardsen</em><br />Head of Conservation<br /><a href='#'>kaiconserve@wayuislandcc.org</a>
+        </p>
+      </article>
+      <form class="qForm" method="get" action="thankyou.html">
+        <fieldset>
+          <h2>General Inquiries</h2>
+          <label class="app"
+            >Name*
+            <input 
+              type="text" 
+              name="name" 
+              required
+          ></label>
+          <label class="app"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone1@gmail.com"
+              required
+          /></label>
+          <label class="app"
+            >Phone* <input type="tel" name="phone" required
+          /></label>
+          <label class="app"
+            >Inquiries
+            <input
+              type="text"
+              name="description"
+              placeholder="How can we help you? Please ask your question here."
+              required
+          /></label>
+          <label><input type='submit' name="btn" value="Inquire" onclick="formTime()"></label>
+        </fieldset>
+      </form>
+    </div>
+    </main>
+    <footer>
+      <div class="max">
+        <a href="index.html"
+          ><img
+            src="images/wwLOGOpngBASED.webp"
+            alt="Wayu-Wayu Chamber of Commerce Logo"
+            width="100"
+            height="62"
+        /></a>
+        <p>
+          Wayu-Wayu Chamber of Commerce<br />2 Seacean Road<br />Wayu-Wayu
+          Island
+        </p>
+        <p>
+          info.wayuislandcc.org<br />+(007) 1200-3252<br /><a href="#"
+            >📍 Location Map</a
+          >
+        </p>
+        <p id="lastMod"></p>
+      </div>
+    </footer>
+  </body>
+</html>

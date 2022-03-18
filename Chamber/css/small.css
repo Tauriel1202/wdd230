@@ -50,7 +50,7 @@ header {
   display: inline;
 }
 .hide {
-  display: inline;
+  display: none;
 }
 .limited {
   grid-column: 1 / 3;
@@ -149,7 +149,7 @@ nav ul {
 /*#endregion Nav*/
 /***************************MAIN CSS *****************************/
 /*#region Main*/
-#normalContent {
+main {
   margin: 2%;
 }
 #normalContent section:nth-child(3),
@@ -439,8 +439,8 @@ aside p {
 /*#region Directory*/
 #gridMode,
 #listMode {
-  background-color: var(--btnBground);
-  border: 2px solid var(--btnColor);
+  background-color: #f764b7;
+  border: 2px solid #c75897;
   border-radius: 8px;
   width: 3em;
   height: 3em;
@@ -450,8 +450,19 @@ aside p {
   display: flex;
   justify-content: center;
 }
-button:hover {
-  background-image: linear-gradient(90deg, #fff, #fcff5c, #fff);
+#listMode[name='active'], #gridMode[name='active'] {
+  background-color: var(--btnBground);
+  border: 2px solid var(--btnColor);
+}
+.btns button:hover {
+  background-image: linear-gradient(
+    90deg,
+    #feffb9,
+    #fcff5c,
+    #fbff00,
+    #fcff5c,
+    #feffb9
+  );
 }
 /*****************GRID MODE*******************/
 .grid section {
@@ -486,3 +497,45 @@ button:hover {
   display: none;
 }
 /*#endregion Join*/
+/***********************CONTACT CSS******************************/
+/*#region Contact*/
+.contactContent h1 {
+  text-align: center;
+  grid-column: 1 / 3;
+}
+.contactContent h2 {
+  position: relative;
+  grid-column: 1 / 2;
+  font-size: 1.3em;
+  padding-bottom: 0.3em;
+}
+.contactContent article:nth-of-type(1) {
+  background-image: url('../images/!Coconuts.jpg');
+  background-size: cover;
+  color: white;
+}
+.contactContent article {
+  /* background-color: #ffeed0; */
+  border-radius: 5px;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 1em;
+}
+.contactContent article:nth-of-type(2) {
+  border: 2px solid #5cc8ff;
+  background-image: linear-gradient(90deg,
+  
+  rgb(254, 255, 185,0.5),
+  rgb(252, 255, 92,0.3),
+  rgb(251, 255, 0,0.4),
+  rgb(252, 255, 92,0.3),
+  rgb(254, 255, 184,0.5)
+  
+  );
+}
+.ccContact h3, .contactPoints h3 {
+  border-bottom: 2px solid #f764b7;
+  width: 90%;
+  margin: 4% auto 2%;
+}
+/*#endregion Contact*/

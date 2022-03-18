@@ -31,6 +31,7 @@
 main {
   max-width: 64rem;
   margin: auto;
+  padding: 2%;
 }
 #normalContent {
     grid-template-columns: 1fr 2fr 1fr;
@@ -93,7 +94,8 @@ main {
     grid-row: 4 / 5;
   }
   #spot3 {
-    display: block;
+    display: grid;
+    margin: 0.3%;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
   }

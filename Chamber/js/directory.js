@@ -6,9 +6,9 @@ fetch(url)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
     const cos = jsonObject["companies"];
     cos.map(displayCos);
+
   });
 function displayCos(co) {
   let singleCo = document.createElement("section");
@@ -39,6 +39,7 @@ function displayCos(co) {
   shops.appendChild(singleCo);
   lazyload();
 }
+
 /*************LIST MODE JS***********/
 let gridBtn = document.querySelector("#gridMode");
 let listBtn = document.querySelector("#listMode");
@@ -47,8 +48,10 @@ let onOff = document.querySelector("#on");
 function resize() {
   if (window.innerWidth > 520 && window.innerWidth < 1021) {
     onOff.setAttribute("class", "lst");
+    toggle(listBtn, gridBtn);
   } else {
     onOff.setAttribute("class", "grid");
+    toggle(gridBtn, listBtn);
   }
 }
 resize();
@@ -56,10 +59,16 @@ window.onresize = resize;
 
 listBtn.addEventListener("click", () => {
   onOff.setAttribute("class", "lst");
+  toggle(listBtn, gridBtn);
 });
 gridBtn.addEventListener("click", () => {
   onOff.setAttribute("class", "grid");
+  toggle(gridBtn, listBtn);
 });
+function toggle(on, off) {
+  on.setAttribute('name', 'active');
+  off.removeAttribute('name');
+}
 
 function lazyload() {
   let images = Array.from(document.querySelectorAll("img[data-src]"));
@@ -89,4 +98,3 @@ function lazyload() {
     });
   }
 }
-
