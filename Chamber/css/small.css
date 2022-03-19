@@ -363,7 +363,7 @@ form label.app:nth-child(8) input {
 form label.ship {
   padding: 0.5em;
 }
-form label input[type="submit"] {
+form input[type="submit"] {
   background-color: #65e77f;
   padding: 0.5em 1em;
   border: 2px solid #1ea539;
