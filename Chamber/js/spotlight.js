@@ -25,6 +25,7 @@ function showSpotlight(arr){
 
     let index = ~~(Math.random()*arr.length)   
     spotImg.src = arr[index].img 
+    spotImg.setAttribute('alt', arr[index].name)
     spotName.textContent = arr[index].name
     email.textContent = arr[index].site
     caption.textContent = arr[index].caption
