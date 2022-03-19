@@ -1,5 +1,6 @@
 const url =
-  "https://api.openweathermap.org/data/2.5/forecast?id=2080185&units=imperial&appid=920c6288bdbd30f49daec29c2657439c";
+  "https://api.openweathermap.org/data/2.5/weather?id=2080185&units=imperial&appid=920c6288bdbd30f49daec29c2657439c";  
+
 const temp = document.querySelector("#temp");
 const humidity = document.querySelector("#humidity");
 const speed = document.querySelector("#speed");
@@ -10,16 +11,15 @@ const weather = document.querySelector("#currentWeather");
 fetch(url)
   .then((response) => response.json())
   .then((jsObject) => {
+    console.log(jsObject)
 
     let weatherImg = document.createElement("img");
-    let current = jsObject.list[0].weather[0].main;
-    let t = jsObject.list[0].main.temp;
-    let h = jsObject.list[0].main.humidity;
-    let s = jsObject.list[0].wind.speed;
+    let current = jsObject.weather[0].main;
+    let t = jsObject.main.temp;
+    let h = jsObject.main.humidity;
+    let s = jsObject.wind.speed;
     let wc = "";
     let iconUrl = `./images/${current}.jpg`;
-    // let img = jsObject.list[0].weather[0].icon;
-    // let iconUrl = `https://openweathermap.org/img/w/${img}.png`;
 
     weather.textContent = current;
     temp.textContent = t.toFixed(0);
@@ -50,4 +50,4 @@ function windChill(temp, speed) {
     35.75 * Math.pow(speed, 0.16) +
     0.4275 * temp * Math.pow(speed, 0.16);
   return Math.round(wc);
-}
+  }

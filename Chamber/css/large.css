@@ -56,8 +56,16 @@ main {
     grid-column: 2 / 3 ;
     grid-row: 2 / 4;
   }
+  /*DIV FOR HERO IMGS*/
+  #hero {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*2nd HERO IMG*/
   #hero2 {
     display: block;
+    margin-top: 0.4em;
   }
   #spot1 {
     grid-column: 3 / 4;
