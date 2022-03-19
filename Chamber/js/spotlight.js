@@ -21,11 +21,13 @@ function showSpotlight(arr){
     let spotImg = document.querySelector(`#spot${i} div img`)
     let spotName = document.querySelector(`#spot${i} h2`)
     let email = document.querySelector(`#spot${i} p:nth-child(4)`)
+    let caption = document.querySelector(`#spot${i} p:nth-child(3)`)
 
     let index = ~~(Math.random()*arr.length)   
     spotImg.src = arr[index].img 
     spotName.textContent = arr[index].name
     email.textContent = arr[index].site
+    caption.textContent = arr[index].caption
 
     arr = arr.filter((item) => {
       return item != arr[index]

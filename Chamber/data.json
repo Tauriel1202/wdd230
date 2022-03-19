@@ -6,7 +6,8 @@
       "phone": "+123-324-7856",
       "site": "resortww@wayuisland.com",
       "img": "./images/resortBground.jpg",
-      "level": "Gold"
+      "level": "Gold",
+      "caption": "The only resort around!"
     },
     {
       "name": "Tropical Evening",
@@ -14,7 +15,8 @@
       "phone": "+889-635-4521",
       "site": "dineUs@wayuisland.com",
       "img": "./images/zEvening.jpg",
-      "level": "Gold"
+      "level": "Gold",
+      "caption": "A meal today is just a call away!"
     },
     {
       "name": "Island Explorations",
@@ -22,7 +24,8 @@
       "phone": "+665-632-7454",
       "site": "inex@wayuisland.com",
       "img": "./images/zHiker.svg",
-      "level": "Gold"
+      "level": "Gold",
+      "caption": "Explore all the island's natural wonders."
     },
     {
       "name": "Mainland Merchants",
@@ -30,7 +33,8 @@
       "phone": "+753-951-8527",
       "site": "outland@wayuisland.com",
       "img": "./images/zShips.jpg",
-      "level": "Silver"
+      "level": "Silver",
+      "caption": "Life is good when we trade together!"
     },
     {
       "name": "Shells for Shore",
@@ -38,7 +42,8 @@
       "phone": "+789-w521-3652",
       "site": "shellww@wayuisland.com",
       "img": "./images/shellBground.jpg",
-      "level": "Silver"
+      "level": "Silver",
+      "caption": "A shell finding activity for kids."
     },
     {
       "name": "Woven Wonders",
@@ -46,7 +51,8 @@
       "phone": "+987-963-5874",
       "site": "wove@wayuisland.com",
       "img": "./images/woven.jpg",
-      "level": "Silver"
+      "level": "Silver",
+      "caption": "Weave got you covered with clothes, souveniers, and daily items."
     },
     {
       "name": "Nice Ice!",
@@ -54,7 +60,8 @@
       "phone": "+745-698-5235",
       "site": "niceIce@wayuisland.com",
       "img": "./images/zIce2.jpg",
-      "level": "Silver"
+      "level": "Silver",
+      "caption": "Frozen, frosty treats all day long!"
     },
     {
       "name": "Clamming the Deep",
@@ -62,7 +69,8 @@
       "phone": "+778-121-9653",
       "site": "clammy@wayuisland.com",
       "img": "./images/zClam.jpg",
-      "level": "Bronze"
+      "level": "Bronze",
+      "caption": "Clams make more than just pearls -- they make dreams."
     },
     {
       "name": "Volcanic Ventures",
@@ -70,7 +78,8 @@
       "phone": "+445-632-9658",
       "site": "vTours@wayuisland.com",
       "img": "./images/zTours.jpg",
-      "level": "Bronze"
+      "level": "Bronze",
+      "caption": "See the volcano up close!"
     },
     {
       "name": "Fishin the Sea",
@@ -78,7 +87,8 @@
       "phone": "+456-852-95154",
       "site": "fishnc@wayuisland.com",
       "img": "./images/zFish.jpg",
-      "level": "Bronze"
+      "level": "Bronze",
+      "caption": "The fish straight from the sea to you"
     },
     {
       "name": "Surf Shack",
@@ -86,7 +96,8 @@
       "phone": "+854-563-5215",
       "site": "surfer@wayuisland.com",
       "img": "./images/zSurf.jpg",
-      "level": "NP"
+      "level": "NP",
+      "caption": "All your surfing and beachy needs."
     },
     {
       "name": "Island Refuge",
@@ -94,7 +105,8 @@
       "phone": "+123-201-0021",
       "site": "save@wayuisland.com",
       "img": "./images/zRefuge.jpg",
-      "level": "NP"
+      "level": "NP", 
+      "caption": "The world needs saving, so I suggest you save it!"
     }
   ]
 }

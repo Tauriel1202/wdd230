@@ -174,7 +174,6 @@ footer p:nth-of-type(2) {
   .ccContact {
     height: 100%;
     width: fit-content;
-    border: 1px solid green;
   }
   .ccContact h2 {
     padding-top: 1em;

@@ -23,7 +23,7 @@ h2 {
 a,
 p,
 nav {
-  font-family: "Catamaran", cursive;
+  font-family: "Catamaran", 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 /*#endregion Setup*/
