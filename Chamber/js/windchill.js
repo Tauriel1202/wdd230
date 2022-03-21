@@ -11,7 +11,6 @@ const weather = document.querySelector("#currentWeather");
 fetch(url)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject)
 
     let weatherImg = document.createElement("img");
     let current = jsObject.weather[0].main;
