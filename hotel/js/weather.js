@@ -1,7 +1,9 @@
 //plop
 // const url =
-//   "https://api.openweathermap.org/data/2.5/onecall?lat=42.0735&lon=-71.7117&units=imperial&exclude=minutely,hourly&appid=0816140b8fdaee1bda37dadd33f12659";
+//   "https://api.openweathermap.org/data/2.5/onecall?lat=59.333&lon=18.065&units=imperial&exclude=minutely,hourly&appid=0816140b8fdaee1bda37dadd33f12659";
 // hydro
+console.log(JSON.stringify(localStorage.getItem('jsonObject')))
+const url = "http://127.0.0.1:3000/c%3A/Users/Lothl/OneDrive/Documents/wdd230/wdd230/hotel/json/test.json"
 
 let clickDate = new Date
 let minute = clickDate.getMinutes()
@@ -26,6 +28,7 @@ const forecast = document.querySelector(".forecast");
 fetch(url)
   .then((response) => response.json())
   .then((jsObject) => {
+    // localStorage.setItem('jsonObject', JSON.stringify(jsObject))
     //CURRENT JS
     const img = document.createElement("img");
     const h4 = document.createElement("h4");
@@ -72,16 +75,6 @@ fetch(url)
       div.append(h3, img, h4, p);
       forecast.append(div);
     }
-    //ALERT JS
-    console.log(jsObject)
-    let alert = document.querySelector('.alert')
-    let event = jsObject.alerts[0].event;
-    
-    alert.addEventListener('click', () => {
-      alert.classList.add('hidden')
-    })
-
-    alert.append(`📢 ${event} ⚠`)
   });
 
 function date(i) {

@@ -1,6 +1,7 @@
 {
   "temples": [
     {
+      "name": "Orlando Florida Temple",
       "img": "imgs/orlandoTemple.jpg",
       "address": "9000 Windy Ridge Rd, Windermere FL, USA 34786-8347",
       "tel": "(1) 407-876-0022",
@@ -11,6 +12,7 @@
       "closure": "Saturday, 2 April 2022, Monday, 15 August 2022 - Monday, 12 December 2022, Saturday, 24 December 2022, Saturday, 31 December 2022"
     },
     {
+      "name": "Stockholm Sweden Temple",
       "img": "imgs/swedenTemple.jpg",
       "address": "Tempelvägen 5, SE-13742 Västerhaninge, Sweden",
       "tel": "(46) 8-5006-5500",
@@ -21,6 +23,7 @@
       "closure": "Saturday, 2 April 2022, Monday, 9 May 2022 - Monday, 23 May 2022, Friday, 24 June 2022 - Saturday, 25 June 2022, Saturday, 1 October 2022, Monday, 21 November 2022 - Monday, 5 December 2022, Friday, 23 December 2022 - Saturday, 24 December 2022, Saturday, 31 December 2022"
     },
     {
+      "name": "Hamilton New Zealand",
       "img": "imgs/zealandTemple.jpg",
       "address": "509 Tuhikaramea Rd, Temple View, Hamilton 3218, New Zealand",
       "tel": "+64 7-846 2750",
@@ -31,6 +34,7 @@
       "closure": "CLOSED FOR RENOVATION"
     },
     {
+      "name": "Laie Hawaii Temple"
       "img": "imgs/hawaiiTemple.jpg",
       "address": "55-600 Naniloa Loop, Laie HI 96762-2202, United States",
       "tel": "(1) 808-293-2427",

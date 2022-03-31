@@ -33,18 +33,6 @@ img {
     color: var(--text2);
     text-align: center;
   }
-  .alert {
-    background-color: var(--text);
-    color: var(--text2);
-    padding: 0.8em;
-    border: none;
-  }
-  .hidden {
-    display: none;
-  }
-  /* button.alert {
-    border: 1px solid green;
-  } */
   .logo {
     width: 8em;
     margin: auto;
@@ -141,20 +129,32 @@ img {
     padding: 0.4em;
   }
   .day {
-    background-color: rgba(0,0,0,0.1);
     margin: 2%;
     padding: 2%;
     border: 2px solid var(--accent2);
     border-radius: 5px;
     text-align: center;
-    /* background-color: var(--accent1); */
   }
   .day img {
     padding: 2%;
     width: 70%;
   }
 /*#endregion Main*/
-
+/*#region TEMPLES*/
+.templeCards {
+  background-color: white;
+  border: none;
+}
+.templeCards div {
+  background-color: var(--text2);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+}
+.templeCards img {
+  border-radius: 10px;
+}
+/*#endregion TEMPLES*/
 /*#region Footer*/
   footer p {
     margin-bottom: 1em;
