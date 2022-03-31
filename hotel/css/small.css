@@ -154,6 +154,9 @@ img {
 .templeCards img {
   border-radius: 10px;
 }
+.templeCards p:nth-of-type() {
+  margin: 1em 2%;
+}
 /*#endregion TEMPLES*/
 /*#region Footer*/
   footer p {

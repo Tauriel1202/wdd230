@@ -6,10 +6,11 @@ fetch(url)
   .then((jsObject) => {
     console.log(jsObject)
     for (let i = 0; i < 4; i++){
-      const div = document.createElement('div') //<-- div
-      const h2 = document.createElement('h2')// <-- name
-      const img = document.createElement('img')// <-- img
-      const p = document.createElement('p')// <--else
+      const div = document.createElement('div') 
+      const h2 = document.createElement('h2')
+      const img = document.createElement('img')
+      const contact = document.createElement('p')
+      const p = document.createElement('p')
 
       let name = jsObject.temples[i].name
       let templeImg = jsObject.temples[i].img
@@ -28,11 +29,10 @@ fetch(url)
       img.width = 100;
       img.height = 100;
 
-      p.innerHTML = `Address: ${address}<br>Tel: ${tel}<br>Email: ${email}`
-      div.append(h2, img, p)
-
-      p.innerHTML = `Closure: ${closure}<br>Ordinance Schedule: ${ordinance}<br>Services: ${services}<br>History: ${history}`
-      div.append(p)
+      contact.innerHTML = `Address: ${address}<br>Tel: ${tel}<br>Email: ${email}`
+      p.innerHTML = `Closure: ${closure}<br><br>Ordinance Schedule: ${ordinance}<br>Services: ${services}<br><br>History: ${history}`
+      
+      div.append(h2, img, contact, p)
       templeCards.append(div)
     }
   })
