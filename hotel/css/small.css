@@ -1,0 +1,199 @@
+/*#region Setup*/
+:root {
+  --main: #800022;
+  --accent1: #D2B48C;
+  --accent2: #33BBFF;
+  --text: #080708;
+  --text2: #E6E8E6;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+}
+a, p, nav {
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  color: var(--text2);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/*#endregion Setup*/
+/*#region Header*/
+  header, footer {
+    background-color: var(--main);
+    color: var(--text2);
+    text-align: center;
+  }
+  .alert {
+    background-color: var(--text);
+    color: var(--text2);
+    padding: 0.8em;
+    border: none;
+  }
+  .hidden {
+    display: none;
+  }
+  /* button.alert {
+    border: 1px solid green;
+  } */
+  .logo {
+    width: 8em;
+    margin: auto;
+    padding-top: 1em;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  header h1 {
+    padding: 2%;
+  }
+  nav {
+    background-color: var(--accent1);
+    text-align: left;
+  }
+  nav li {
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 0.5em;
+  }
+  nav li a {
+    text-decoration: none;
+    color: var(--text);
+  }
+  #hamBtn {
+    width: 2em;
+    height: 2em;
+    margin: 2%;
+  }
+  nav li.active {
+    background-color: var(--accent2);
+  }
+  nav li:hover {
+    background-color: var(--text2)
+  }
+  #headerNav {
+    display: none;
+  }
+  #headerNav.open {
+    display: block;
+  }
+/*#endregion Header*/
+/*#region Main*/
+  main {
+    margin: 2%;
+  }
+  main h2 {
+    padding: 0.4em 0;
+    font-size: 1.8em;;
+  }
+  .call {
+    width: 100%;
+    display: flex;
+  }
+  .call img {
+    width: 100%;
+    position: relative;
+  }
+  .call p {
+    position: absolute;
+    background-color: var(--main);
+    color: var(--text2);
+    font-size: 1.1em;
+    margin-top: 47%;
+    padding: 0.5em;
+    padding-left: 10%;
+  }
+  section {
+    background-color: var(--text2);
+    margin: 2% 0;
+    border: 2px solid var(--accent2);
+  }
+  .temple img  {
+    padding: 2%;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+  }
+  .temple p {
+    padding: 2%;
+  }
+  .currentWeather {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .currentWeather h3 {
+    margin: 2%;
+  }
+  .currentWeather img {
+    width: 70%;
+    padding: 2%;
+  }
+  .forecast {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.4em;
+  }
+  .day {
+    background-color: rgba(0,0,0,0.1);
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid var(--accent2);
+    border-radius: 5px;
+    text-align: center;
+    /* background-color: var(--accent1); */
+  }
+  .day img {
+    padding: 2%;
+    width: 70%;
+  }
+/*#endregion Main*/
+
+/*#region Footer*/
+  footer p {
+    margin-bottom: 1em;
+  }
+  footer div.logo{
+    margin-bottom: 1em;
+  }
+  footer fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+  }
+  footer label{
+    margin: auto;
+    padding: 1%;
+    text-align: left;
+  }
+  footer input {
+    width: 100%;
+    border: 1px solid var(--accent2);
+    border-left: 5px solid var(--accent2);
+    background-color: var(--text2);
+    padding: 0.2em;
+  }
+  footer button {
+    border: 3px solid var(--accent2);
+    border-radius: 10px;
+    padding: 2%;
+  }
+  .social {
+    margin: 1em auto;
+    display: flex;
+    width: 3em;
+  }
+  .social img {
+    width: 100%;
+    height: auto;
+  }
+  footer #lastMod {
+    padding-bottom: 1em;;
+  }
+/*#endregion Footer*/

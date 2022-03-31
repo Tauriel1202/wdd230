@@ -1,0 +1,48 @@
+{
+  "temples": [
+    {
+      "img": "imgs/orlandoTemple.jpg",
+      "address": "9000 Windy Ridge Rd, Windermere FL, USA 34786-8347",
+      "tel": "(1) 407-876-0022",
+      "email": "",
+      "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+      "history": "Announced: 6 April 1991, Groundbreaking: 20 June 1992, Dedicated: 9 October 1994",
+      "ordinance": "",
+      "session": "",
+      "closure": "Saturday, 2 April 2022, Monday, 15 August 2022 - Monday, 12 December 2022, Saturday, 24 December 2022, Saturday, 31 December 2022"
+    },
+    {
+      "img": "imgs/swedenTemple.jpg",
+      "address": "Tempelvägen 5, SE-13742 Västerhaninge, Sweden",
+      "tel": "(46) 8-5006-5500",
+      "email": "",
+      "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+      "history": "Announced: 1 April 1981, Groundbreaking: 17 March 1984, Dedicated: 2 July 1985",
+      "ordinance": "",
+      "session": "",
+      "closure": "Saturday, 2 April 2022, Monday, 9 May 2022 - Monday, 23 May 2022, Friday, 24 June 2022 - Saturday, 25 June 2022, Saturday, 1 October 2022, Monday, 21 November 2022 - Monday, 5 December 2022, Friday, 23 December 2022 - Saturday, 24 December 2022, Saturday, 31 December 2022"
+    },
+    {
+      "img": "imgs/zealandTemple.jpg",
+      "address": "509 Tuhikaramea Rd, Temple View, Hamilton 3218, New Zealand",
+      "tel": "",
+      "email": "",
+      "services": "No services because of renovation",
+      "history": "Announced: 17 February 1955, Groundbreaking: 21 December 1955, Dedicated: 20 April 1958",
+      "ordinance": "",
+      "session": "",
+      "closure": "CLOSED FOR RENOVATION"
+    },
+    {
+      "img": "imgs/hawaiiTemple.jpg",
+      "address": "",
+      "tel": "",
+      "email": "",
+      "services": "",
+      "history": "",
+      "ordinance": "",
+      "session": "",
+      "closure": ""
+    }
+  ]
+}

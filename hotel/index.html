@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Home for Temple Inn and Suites." />
+
+    <title>Temple Inn and Suites</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/small.css" />
+    <link rel="stylesheet" type="text/css" href="css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="css/large.css" />
+
+    <script src="js/shared.js" defer></script>
+    <script src="js/weather.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p class="alert"><button class="alert"><strong>X</strong></button>
+</p>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="imgs/innLogo.png"
+            alt="Temple Inn & Suites"
+            width="100"
+            height="100"
+        /></a>
+      </div>
+      <h1>Temple Inn & Suites</h1>
+      <div class="social">
+        <img src="imgs/fb.png" alt="facebook" width="25" height="25" />
+        <img src="imgs/in.png" alt="linkedin" width="25" height="25" />
+      </div>
+      <nav>
+        <button id="hamBtn">&#9776;</button>
+        <ul id="headerNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reserve.html">Reserve a Room</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="missionaries.html">Missionaries</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div class="call">
+        <a href="index.html">
+          <img src="imgs/dcTemple.jpg" alt="temple" width="250" height="150" />
+        </a>
+        <p><a href="reserve.html">Book a Room!</a></p>
+      </div>
+      <section class="temple">
+        <div class="templeImg">
+          <img
+            src="imgs/orlandoTemple.jpg"
+            alt="Temple img"
+            width="300"
+            height="300"
+          />
+        </div>
+        <p>
+          <strong>Address:</strong> 9000 Windy Ridge Rd, Windermere FL, USA
+          34786-8347<br />
+          <strong>Telephone:</strong> (1) 407-876-0022<br />
+          <strong>Monday-Friday:</strong> 8AM-6PM
+        </p>
+      </section>
+      <section class="currentWeather"><h3>Current Weather</h3></section>
+      <section class="forecast">
+        <h3>3-day Forecast</h3>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="imgs/innLogo.png"
+            alt="Temple Inn & Suites"
+            width="25"
+            height="25"
+        /></a>
+      </div>
+      <p>
+        <a href="#">📍 Map</a><br />4800 Montgomery Ln #300<br />Bethsada, MD
+        20814
+      </p>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <label>*Name: <input type="text" name="name" required /></label>
+          <label>*Email: <input type="email" name="email" required /></label>
+          <label>*Phone: <input type="phone" name="tel" required /></label>
+          <label>*Question/Comment: <input type="text" name='q' required></label>
+        </fieldset>
+        <button>Contact Us!</button>
+      </form>
+      <div class="social">
+        <img src="imgs/fb.png" alt="facebook" width="25" height="25" />
+        <img src="imgs/in.png" alt="linkedin" width="25" height="25" />
+      </div>
+      <p id="lastMod"></p>
+    </footer>
+  </body>
+</html>
