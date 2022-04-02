@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Home for Temple Inn and Suites." />
 
-    <title>Temple Inn and Suites: Reserve a Room</title>
+    <title>Temple Inn and Suites: Temples</title>
 
     <link rel="shortcut icon" href="imgs/hotelLogo.ico" />
 
@@ -42,7 +42,7 @@
         <ul id="headerNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="temples.html">Temples</a></li>
-          <li class="active"><a href="reserve.html">Reserve a Room</a></li>
+          <li><a href="reserve.html">Reserve a Room</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="reception.html">Receptions</a></li>
           <li><a href="missionaries.html">Missionaries</a></li>
@@ -50,54 +50,17 @@
       </nav>
     </header>
     <main>
-      <h2>Reserve a Room!</h2>
-      <form method="get" action="thankyou.html" class="bodyForm">
-        <fieldset>
-          <label
-            >*Location:
-            <input type="text" name="loc" placeholder="Oslo, Norway" required
-          /></label>
-          <label>*Start Date: <input type="date" name="come" required /></label>
-          <label>*End Date: <input type="date" name="leave" required /></label>
-          <fieldset class="select">
-            <legend>*Number of Room(s):</legend>
-            <label>One <input type="radio" name="rooms" /></label>
-            <label>Two <input type="radio" name="rooms" /></label>
-            <label>Three <input type="radio" name="rooms" /></label>
-            <label>Four <input type="radio" name="rooms" /></label>
-          </fieldset>
-          <fieldset class="select">
-            <legend>*Type of Rooms(s):</legend>
-            <label>1 Queen <input type="checkbox" name="1queen" /></label>
-            <label>2 Queen <input type="checkbox" name="2queen" /></label>
-            <label>Suite <input type="checkbox" name="suite" /></label>
-          </fieldset>
-          <label
-            >*First Name: <input type="text" name="first" required
-          /></label>
-          <label>*Last Name: <input type="text" name="last" required /></label>
-          <label
-            >*Email:
-            <input
-              type="email"
-              name="email"
-              placeholder="someone@234.com"
-              required
-          /></label>
-          <label>*Tel: <input type="tel" name="tel" required /></label>
-          <label
-            >Home State/Country:
-            <input
-              type="text"
-              name="place"
-              placeholder="ie. Massachusetts, USA or Svalbard, Iceland"
-          /></label>
-          <label
-            >Special Accommodations/Comments: <input type="text" name="comment"
-          /></label>
-          <input type="submit" name="btn" value="Reserve" />
-        </fieldset>
-      </form>
+      <p class="ty">
+        🛫 Thank you for contacting Temple Inns and Suites! 💎 We will reply as
+        soon as possible.🔹
+      </p>
+      <h2 class="where">Where would you like to go next?</h2>
+      <button class="nextBtn"><a href="index.html">Home</a></button>
+      <button class="nextBtn"><a href="temples.html">Temples</a></button>
+      <button class="nextBtn"><a href="reserve.html">Reserve a Room</a></button>
+      <button class="nextBtn"><a href="services.html">Services</a></button>
+      <button class="nextBtn"><a href="reception.html">Receptions</a></button>
+      <button class="nextBtn"><a href="missionaries.html">Missionaries</a></button>
     </main>
     <footer>
       <div class="logo">
@@ -118,8 +81,15 @@
           <label>*Name: <input type="text" name="name" required /></label>
           <label>*Email: <input type="email" name="email" required /></label>
           <label>*Phone: <input type="phone" name="tel" required /></label>
-          <label>*Comment <input type="text" name="qc" placeholder='Questions/comment' required /></label>
-          <input type='submit' name="btn" value="Contact Us!">
+          <label
+            >*Comment
+            <input
+              type="text"
+              name="qc"
+              placeholder="Questions/comments"
+              required
+          /></label>
+          <input type="submit" name="btn" value="Contact Us!" />
         </fieldset>
       </form>
       <div class="social">

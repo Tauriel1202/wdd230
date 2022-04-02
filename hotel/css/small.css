@@ -16,7 +16,7 @@
 h1, h2, h3, h4 {
   font-family: 'Cinzel', serif;
 }
-a, p, nav {
+a, li, p, nav {
   font-family: 'Raleway', sans-serif;
 }
 a {
@@ -149,15 +149,144 @@ img {
   background-color: var(--text2);
   border-radius: 10px;
   margin: 2%;
+  padding: 2%; 
+}
+.templeCards h3 {
+  text-align: center;
+  font-size: 1.5em;
   padding: 2%;
 }
 .templeCards img {
   border-radius: 10px;
 }
-.templeCards p:nth-of-type() {
-  margin: 1em 2%;
+.templeCards p {
+  padding: 2%;
+}
+.like {
+  border: 5px solid #ff00ff;
+  border-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 212, 255)), to(rgb(255, 212, 255)), color-stop(0.5, rgb(255, 135, 255))) 20 repeat repeat;
 }
 /*#endregion TEMPLES*/
+/*#region RESERVE*/
+.bodyForm fieldset {
+  background-color: var(--text2);
+  border-radius: 10px;
+  border: 2px solid var(--accent1);
+}
+.bodyForm label, .bodyForm input:not(.select input) {
+  display: block;
+  margin: 0.5em 0;
+  width: 100%;
+}
+.bodyForm input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.bodyForm fieldset.select {
+  border: none;
+  display: flex;
+  padding: 0;
+  margin: 0.5em 0.3em;
+}
+.bodyForm input[required] {
+  border: 1px solid var(--accent2);
+  border-left: 5px solid var(--accent2);
+}
+.bodyForm input[type="submit"] {
+  background-color: var(--accent2);
+}
+/*#endregion RESERVE*/
+/*#region SERVICES*/
+.services a {
+  color: var(--main);
+}
+.services {
+  padding: 2%;
+}
+.services li, .services h3 {
+  list-style-type: none;
+  padding: 0.3em 0;
+}
+.services:nth-of-type(3) {
+  border: none;
+  background-color: #fff;
+}
+.services:nth-of-type(3) img {
+  border: 2px solid var(--main);
+  border-radius: 10px;
+}
+/*#endregion SERVICES*/
+/*#region RECEPTION*/
+.recep {
+  background-color: var(--accent2);
+  text-align: center;
+  padding: 2%;
+  border: 1px solid var(--accent1);
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.recep li {
+  list-style-type: none;
+  padding: 0.2em;
+}
+.recep ul {
+  margin-top: 1em;
+}
+/*#endregion RECEPTION*/
+/*#region MISSIONARIES*/
+.mission {
+  /* background-image: url("hotel/imgs/zealandTemple.jpg"); */
+  background-image: url('../imgs/zealandTemple.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 10px;
+}
+.mission li {
+  list-style-type: none;
+  padding: 0.1em;
+  margin: 0 2%;
+}
+.mission article {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.45);
+  color: #fff;
+}
+.mission h4:nth-of-type(2) {
+  padding-top: 1em;
+}
+.mission h4 {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin: 0 2%;
+}
+.formTitle {
+  margin: 1em 0 0.1em;
+}
+/*#endregion MISSIONARIES*/
+/*#region TY*/
+  .ty {
+    background-color: var(--text2);
+    border: 2px solid var(--main);
+    margin: 2em;
+    padding: 1em 0.5em;
+    text-align: center;
+  }
+  .nextBtn {
+    background-color: var(--text2);
+    border: 2px solid var(--accent2);
+    border-radius: 5px;
+    padding: 0.2em;
+    margin: 0.5em;
+  }
+  .nextBtn a {
+    color: var(--text);
+    padding: 1em 0;
+  }
+  .where {
+    font-size: 1.3em;
+  }
+/*#endregion TY*/
 /*#region Footer*/
   footer p {
     margin-bottom: 1em;
@@ -166,26 +295,31 @@ img {
     margin-bottom: 1em;
   }
   footer fieldset {
-    display: flex;
-    flex-wrap: wrap;
     border: none;
+    display: grid;
   }
   footer label{
     margin: auto;
     padding: 1%;
     text-align: left;
   }
-  footer input {
+  footer label:nth-of-type(4) input {
     width: 100%;
+    padding-bottom: 1.5em;
+  }
+  footer input {
     border: 1px solid var(--accent2);
     border-left: 5px solid var(--accent2);
     background-color: var(--text2);
     padding: 0.2em;
   }
-  footer button {
+  footer form input[type="submit"] {
     border: 3px solid var(--accent2);
     border-radius: 10px;
     padding: 2%;
+    width: 10em;
+    height: 3em;
+    margin: 1em auto 0;
   }
   .social {
     margin: 1em auto;
