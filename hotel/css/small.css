@@ -38,10 +38,7 @@ img {
     margin: auto;
     padding-top: 1em;
   }
-  .logo img {
-    width: 100%;
-    height: auto;
-  }
+
   header h1 {
     padding: 2%;
   }
@@ -290,12 +287,12 @@ img {
     background-color: var(--text2);
     border: 2px solid var(--accent2);
     border-radius: 5px;
-    padding: 0.2em;
+    padding: 0.4em 0.2em;
     margin: 0.5em;
   }
   .nextBtn a {
     color: var(--text);
-    padding: 1em 0;
+    padding: 1em 4em;
   }
   .tyBtns {
     display: grid;

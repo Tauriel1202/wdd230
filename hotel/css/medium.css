@@ -72,6 +72,12 @@ main {
   grid-row: 2 / 3;
 }
 /*#endregion MISSION*/
+/*#region TY*/
+  .tyBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+/*#endregion TY*/
 /*#region FOOTER*/
 footer {
   display: grid;
