@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Home for Temple Inn and Suites." />
+    <meta name="description" content="Reserve a room at the Temple Inn and Suites!" />
 
     <title>Temple Inn and Suites: Reserve a Room</title>
 
@@ -51,6 +51,7 @@
     </header>
     <main>
       <h2>Reserve a Room!</h2>
+      <div class="reserve">
       <form method="get" action="thankyou.html" class="bodyForm">
         <fieldset>
           <label
@@ -61,10 +62,14 @@
           <label>*End Date: <input type="date" name="leave" required /></label>
           <fieldset class="select">
             <legend>*Number of Room(s):</legend>
-            <label>One <input type="radio" name="rooms" /></label>
-            <label>Two <input type="radio" name="rooms" /></label>
-            <label>Three <input type="radio" name="rooms" /></label>
-            <label>Four <input type="radio" name="rooms" /></label>
+            <label class="radio">One <input type="radio" name="rooms" /></label>
+            <label class="radio">Two <input type="radio" name="rooms" /></label>
+            <label class="radio"
+              >Three <input type="radio" name="rooms"
+            /></label>
+            <label class="radio"
+              >Four <input type="radio" name="rooms"
+            /></label>
           </fieldset>
           <fieldset class="select">
             <legend>*Type of Rooms(s):</legend>
@@ -98,6 +103,11 @@
           <input type="submit" name="btn" value="Reserve" />
         </fieldset>
       </form>
+      <div class="imgs">
+        <img src="imgs/indoorPool.jpg" alt="room" width="100" height="100">
+        <img src="imgs/dcTemple.jpg" alt="room" width='100' height="100">
+      </div>
+    </div>
     </main>
     <footer>
       <div class="logo">
@@ -117,16 +127,19 @@
         <fieldset>
           <label>*Name: <input type="text" name="name" required /></label>
           <label>*Email: <input type="email" name="email" required /></label>
-          <label>*Phone: <input type="phone" name="tel" required /></label>
-          <label>*Comment <input type="text" name="qc" placeholder='Questions/comment' required /></label>
-          <input type='submit' name="btn" value="Contact Us!">
+          <label>*Phone: <input type="tel" name="tel" required /></label>
+          <label
+            >*Comment
+            <input
+              type="text"
+              name="qc"
+              placeholder="Questions/comments"
+              required
+          /></label>
+          <input type="submit" name="btn" value="Contact Us!" />
         </fieldset>
       </form>
-      <div class="social">
-        <img src="imgs/fb.png" alt="facebook" width="25" height="25" />
-        <img src="imgs/in.png" alt="linkedin" width="25" height="25" />
-      </div>
-      <p id="lastMod">PLOP</p>
+      <p id="lastMod"></p>
     </footer>
   </body>
 </html>

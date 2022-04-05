@@ -1,4 +1,19 @@
 @media only screen and (min-width: 32.5rem){
+.call p {
+  padding: 1em;
+  width: 50%;
+  text-align: right;
+  font-size: 1.5em;
+  margin-top: 40%;
+}
+  .home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+.currentWeather {
+  padding-top: 2em;
+}
 .forecast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -7,6 +22,79 @@
   grid-column: 1 / 4;
   padding: 2%;
 }
+.templeImg {
+  padding: 1em;
+}
+.temple p {
+  padding-bottom: 1.5em;
+}
+/*#region TEMPLES*/
+.templeCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*#endregion TEMPLES*/
+/*#region SERVICES*/
+.sections {
+  display: flex;
+}
+.sections .services:nth-of-type(1) {
+  width: 70%;
+}
+main .services:not(.sections .services) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1%;
+}
 
+/*#endregion SERVICES*/
+/*#region RECEPTION*/
+.recep {
+  margin: auto;
+}
+.recep ul {
+  width: 60%;
+}
+/*#endregion RECEPTION*/
+/*#region MISSION*/
+main {
+  display: grid;
+}
+.mission article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 2%;
+  }
+.mission h4 {
+  padding-top: 1em;
+}
+.mission ul {
+  grid-row: 2 / 3;
+}
+/*#endregion MISSION*/
+/*#region FOOTER*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .logo {
+  grid-row: 1 / 2;
+}
+footer p:nth-of-type(1) {
+  grid-column: 1 / 2;
+}
+footer form {
+  grid-row: 1 / 3;
+  margin-top: 1.5em;
+}footer label {
+  margin: auto;
+  padding-right: 1em;
+}
+#lastMod {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  margin-top: 2em;
+}
+/*#endregion FOOTER*/
 
 }/*<--DO NOT DELETE!!!!!!!

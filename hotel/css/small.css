@@ -52,6 +52,7 @@ img {
   nav li {
     border: 1px solid rgba(0,0,0,0.3);
     padding: 0.5em;
+    list-style-type: none;
   }
   nav li a {
     text-decoration: none;
@@ -95,9 +96,9 @@ img {
     position: absolute;
     background-color: var(--main);
     color: var(--text2);
-    font-size: 1.1em;
-    margin-top: 47%;
-    padding: 0.5em;
+    font-size: 1.3em;
+    margin-top: 33%;
+    padding: 1em;
     padding-left: 10%;
   }
   section {
@@ -105,12 +106,12 @@ img {
     margin: 2% 0;
     border: 2px solid var(--accent2);
   }
-  .temple img  {
+  .templeImg img  {
     padding: 2%;
     border-bottom: 2px solid rgba(0,0,0,0.3);
   }
   .temple p {
-    padding: 2%;
+    padding: 2% ;
   }
   .currentWeather {
     text-align: center;
@@ -185,7 +186,6 @@ img {
 }
 .bodyForm fieldset.select {
   border: none;
-  display: flex;
   padding: 0;
   margin: 0.5em 0.3em;
 }
@@ -195,6 +195,9 @@ img {
 }
 .bodyForm input[type="submit"] {
   background-color: var(--accent2);
+}
+.imgs {
+  display: none;
 }
 /*#endregion RESERVE*/
 /*#region SERVICES*/
@@ -219,12 +222,19 @@ img {
 /*#endregion SERVICES*/
 /*#region RECEPTION*/
 .recep {
-  background-color: var(--accent2);
+  background-image: url('../imgs/hawaiiTemple.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 2%;
   border: 1px solid var(--accent1);
   border-radius: 10px;
   margin-bottom: 2em;
+  width: 80%;
+  margin: auto;
+}
+.moveTitle {
+  text-align: center;
 }
 .recep li {
   list-style-type: none;
@@ -232,6 +242,9 @@ img {
 }
 .recep ul {
   margin-top: 1em;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  margin: 1em auto 0;
 }
 /*#endregion RECEPTION*/
 /*#region MISSIONARIES*/
@@ -268,7 +281,8 @@ img {
   .ty {
     background-color: var(--text2);
     border: 2px solid var(--main);
-    margin: 2em;
+    margin: 1.5em;
+    margin-bottom: 3em;
     padding: 1em 0.5em;
     text-align: center;
   }
@@ -283,8 +297,13 @@ img {
     color: var(--text);
     padding: 1em 0;
   }
+  .tyBtns {
+    display: grid;
+    margin: 0 1em;
+  }
   .where {
     font-size: 1.3em;
+    margin: 0.5em 1em 0;
   }
 /*#endregion TY*/
 /*#region Footer*/
@@ -297,28 +316,29 @@ img {
   footer fieldset {
     border: none;
     display: grid;
+    padding-right: 0;
   }
   footer label{
     margin: auto;
     padding: 1%;
     text-align: left;
+    display: flex;
   }
-  footer label:nth-of-type(4) input {
-    width: 100%;
-    padding-bottom: 1.5em;
+  footer label input:not(footer label:nth-of-type(4) input) {
+    margin-left: 1.7em;
   }
   footer input {
     border: 1px solid var(--accent2);
     border-left: 5px solid var(--accent2);
     background-color: var(--text2);
     padding: 0.2em;
+    margin: 0 2%;
   }
   footer form input[type="submit"] {
     border: 3px solid var(--accent2);
     border-radius: 10px;
     padding: 2%;
-    width: 10em;
-    height: 3em;
+    width: 18em;
     margin: 1em auto 0;
   }
   .social {
@@ -326,10 +346,7 @@ img {
     display: flex;
     width: 3em;
   }
-  .social img {
-    width: 100%;
-    height: auto;
-  }
+
   footer #lastMod {
     padding-bottom: 1em;;
   }
