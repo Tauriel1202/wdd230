@@ -143,6 +143,9 @@ img {
     padding: 2%;
     width: 70%;
   }
+  .source a {
+    color: var(--main);
+  }
 /*#endregion Main*/
 /*#region TEMPLES*/
 .templeCards {
