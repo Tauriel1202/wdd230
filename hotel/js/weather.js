@@ -1,25 +1,4 @@
-//plop
-const url =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=59.333&lon=18.065&units=imperial&exclude=minutely,hourly&appid=0816140b8fdaee1bda37dadd33f12659";
-// hydro
-// console.log(JSON.stringify(localStorage.getItem('jsonObject')))
-// const url = "http://127.0.0.1:3000/c%3A/Users/Lothl/OneDrive/Documents/wdd230/wdd230/hotel/json/test.json"
-
-let clickDate = new Date
-let minute = clickDate.getMinutes()
-console.log(minute, localStorage.getItem('minute'))
-if(Number(localStorage.getItem('minute')) != minute){
-  localStorage.setItem('minute', minute)
-  localStorage.setItem('clicks',0)
-}
-
-localStorage.setItem('clicks',Number(localStorage.getItem('clicks'))+1)
-console.log('💩',localStorage.getItem('clicks'))
-
-// let url;
-// if(Number(localStorage.getItem('clicks') < 50)){
-//   url = "https://api.openweathermap.org/data/2.5/onecall?lat=28.750&lon=-82.500&units=imperial&exclude=minutely,hourly&appid=517dcf5775e231ee14a4ac01faf8814c";
-// }
+const url = "http://127.0.0.1:3000/c%3A/Users/Lothl/OneDrive/Documents/wdd230/wdd230/hotel/json/test.json"
 
 //CURRENT WEATHER
 const current = document.querySelector(".currentWeather");
@@ -28,7 +7,6 @@ const forecast = document.querySelector(".forecast");
 fetch(url)
   .then((response) => response.json())
   .then((jsObject) => {
-    localStorage.setItem('jsonObject', JSON.stringify(jsObject))
     //CURRENT JS
     const img = document.createElement("img");
     const h4 = document.createElement("h4");

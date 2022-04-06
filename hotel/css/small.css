@@ -55,9 +55,11 @@ img {
     color: var(--text);
   }
   #hamBtn {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     margin: 2%;
+    border: 2px solid var(--accent2);
+    border-radius: 0px;
   }
   nav li.active {
     background-color: var(--accent2);
