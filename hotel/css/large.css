@@ -37,9 +37,10 @@ nav {
     margin: auto;
     padding: 2%;
   }
-  .call p {
-    width: 30%;
-  }
+/* .call p{ */
+  /* margin:0; */
+  /* bottom:10px; */
+/* } */
 /*#endregion MAIN*/
 /*#region RESERVE*/
   .reserve {

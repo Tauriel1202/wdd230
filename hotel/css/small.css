@@ -38,7 +38,6 @@ img {
     margin: auto;
     padding-top: 1em;
   }
-
   header h1 {
     padding: 2%;
   }
@@ -83,20 +82,20 @@ img {
   }
   .call {
     width: 100%;
-    display: flex;
+    height: fit-content;
   }
   .call img {
     width: 100%;
     position: relative;
   }
   .call p {
-    position: absolute;
+    display: inline;
+    position:relative;
     background-color: var(--main);
     color: var(--text2);
     font-size: 1.3em;
-    margin-top: 33%;
-    padding: 1em;
-    padding-left: 10%;
+    padding: 0.8em;
+    bottom: 3em;
   }
   section {
     background-color: var(--text2);
@@ -339,11 +338,13 @@ img {
     margin: 1em auto 0;
   }
   .social {
-    margin: 1em auto;
-    display: flex;
-    width: 3em;
+    margin: 0 auto;
+    width: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    min-height: 48px;
   }
-
   footer #lastMod {
     padding-bottom: 1em;;
   }
