@@ -1,4 +1,4 @@
-const url = "http://127.0.0.1:3000/c%3A/Users/Lothl/OneDrive/Documents/wdd230/wdd230/hotel/json/test.json"
+const url = "https://api.openweathermap.org/data/2.5/onecall?lat=59.333&lon=18.065&units=imperial&exclude=minutely,hourly&appid=517dcf5775e231ee14a4ac01faf8814c";
 
 //CURRENT WEATHER
 const current = document.querySelector(".currentWeather");
@@ -7,6 +7,7 @@ const forecast = document.querySelector(".forecast");
 fetch(url)
   .then((response) => response.json())
   .then((jsObject) => {
+    localStorage.setItem('jsonObject', JSON.stringify(jsObject))
     //CURRENT JS
     const img = document.createElement("img");
     const h4 = document.createElement("h4");
