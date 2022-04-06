@@ -11,6 +11,7 @@ h1 {
   grid-column: 2 / 3;
 }
 header .social {
+  margin-top: 2em;
   grid-column: 3 / 4;
 }
 nav {
@@ -37,10 +38,6 @@ nav {
     margin: auto;
     padding: 2%;
   }
-/* .call p{ */
-  /* margin:0; */
-  /* bottom:10px; */
-/* } */
 /*#endregion MAIN*/
 /*#region RESERVE*/
   .reserve {

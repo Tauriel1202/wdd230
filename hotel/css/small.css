@@ -102,6 +102,11 @@ img {
     margin: 2% 0;
     border: 2px solid var(--accent2);
   }
+  .temple h3 {
+    text-align: center;
+    font-size: 1.25em;
+    padding-top: 0.4em;
+  }
   .templeImg img  {
     padding: 2%;
     border-bottom: 2px solid rgba(0,0,0,0.3);
@@ -180,6 +185,9 @@ img {
   border-radius: 5px;
   border: 1px solid black;
 }
+.bodyForm label.radio input, .bodyForm label input {
+  margin: 0.4em;
+}
 .bodyForm fieldset.select {
   border: none;
   padding: 0;
@@ -245,7 +253,6 @@ img {
 /*#endregion RECEPTION*/
 /*#region MISSIONARIES*/
 .mission {
-  /* background-image: url("hotel/imgs/zealandTemple.jpg"); */
   background-image: url('../imgs/zealandTemple.jpg');
   background-repeat: no-repeat;
   background-size:cover;
@@ -256,15 +263,15 @@ img {
   padding: 0.1em;
   margin: 0 2%;
 }
-.mission article {
-  border-radius: 10px;
+.mission section {
   background-color: rgba(0,0,0,0.45);
   color: #fff;
+  border: none;
 }
-.mission h4:nth-of-type(2) {
+.mission h3:nth-of-type(2) {
   padding-top: 1em;
 }
-.mission h4 {
+.mission h3 {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   margin: 0 2%;
@@ -286,12 +293,10 @@ img {
     background-color: var(--text2);
     border: 2px solid var(--accent2);
     border-radius: 5px;
-    padding: 0.4em 0.2em;
     margin: 0.5em;
-  }
-  .nextBtn a {
     color: var(--text);
     padding: 1em 4em;
+    text-align: center;
   }
   .tyBtns {
     display: grid;
@@ -339,7 +344,7 @@ img {
   }
   .social {
     margin: 0 auto;
-    width: 5em;
+    width: 6em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0.5em;

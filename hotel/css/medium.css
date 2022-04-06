@@ -14,9 +14,6 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 1em;
 }
-.currentWeather {
-  padding-top: 2em;
-}
 .forecast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -64,12 +61,12 @@ main .services:not(.sections .services) {
 main {
   display: grid;
 }
-.mission article {
+.mission section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 2%;
-  }
-.mission h4 {
+}
+.mission h3 {
   padding-top: 1em;
 }
 .mission ul {
@@ -96,7 +93,8 @@ footer p:nth-of-type(1) {
 footer form {
   grid-row: 1 / 3;
   margin-top: 1.5em;
-}footer label {
+}
+footer label {
   margin: auto;
   padding-right: 1em;
 }
@@ -107,4 +105,4 @@ footer form {
 }
 /*#endregion FOOTER*/
 
-}/*<--DO NOT DELETE!!!!!!!
+}
