@@ -45,6 +45,9 @@ nav {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
   }
+  .reserve form input[type='submit'] {
+    margin-top: 1.4em;
+  }
   .imgs {
     display: block;
   }
