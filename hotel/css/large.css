@@ -54,7 +54,7 @@
   .reserve .imgs {
     width: 75%;
     margin: auto;
-    margin-top: 3.2em;
+    margin-top: 3.5em;
     display: block;
     grid-row: 1 / 2;
   }

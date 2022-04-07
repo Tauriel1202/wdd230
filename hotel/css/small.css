@@ -234,29 +234,39 @@ img {
 /*#endregion SERVICES*/
 /*#region RECEPTION*/
 .recep {
-  background-image: url('../imgs/hawaiiTemple.jpg');
+  background-image: url('../imgs/hawaiiTemple.jpg'); 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
   text-align: center;
   padding: 2%;
   border: 1px solid var(--accent1);
   border-radius: 10px;
   margin-bottom: 2em;
-  width: 95%;
   margin: auto;
 }
+
 .moveTitle {
   text-align: center;
 }
 .recep li {
   list-style-type: none;
-  padding: 0.2em;
+  padding: 0.5em;
 }
 .recep ul {
   margin-top: 1em;
   background-color: rgba(0,0,0,0.6);
   color: #fff;
   margin: 1em auto 0;
+}
+.recepImgs {
+  margin: auto;
+  width: 93%;
+  margin-top: 1em;
+  border-radius: 10px;
+}
+.recepImgs img {
+  padding: 2%;
+  border-radius: 10px;
 }
 /*#endregion RECEPTION*/
 /*#region MISSIONARIES*/

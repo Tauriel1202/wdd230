@@ -66,6 +66,11 @@ main .services:not(.sections .services) {
 .recep ul {
   width: 60%;
 }
+.recepImgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 87%;
+}
 /*#endregion RECEPTION*/
 /*#region MISSION*/
 main {
