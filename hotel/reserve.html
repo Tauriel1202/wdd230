@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Reserve a room at the Temple Inn and Suites!" />
+    <meta
+      name="description"
+      content="Reserve a room at the Temple Inn and Suites!"
+    />
 
     <title>Temple Inn and Suites: Reserve a Room</title>
 
@@ -52,63 +55,74 @@
     <main>
       <h2>Reserve a Room!</h2>
       <div class="reserve">
-      <form method="get" action="thankyou.html" class="bodyForm">
-        <fieldset>
-          <label
-            >*Location:
-            <input type="text" name="loc" placeholder="Oslo, Norway" required
-          /></label>
-          <label>*Start Date: <input type="date" name="come" required /></label>
-          <label>*End Date: <input type="date" name="leave" required /></label>
-          <fieldset class="select">
-            <legend>*Number of Room(s):</legend>
-            <label class="radio">One <input type="radio" name="rooms" /></label>
-            <label class="radio">Two <input type="radio" name="rooms" /></label>
-            <label class="radio"
-              >Three <input type="radio" name="rooms"
+        <form method="get" action="thankyou.html" class="bodyForm">
+          <fieldset>
+            <label
+              >*Location:
+              <input type="text" name="loc" placeholder="Oslo, Norway" required
             /></label>
-            <label class="radio"
-              >Four <input type="radio" name="rooms"
+            <label
+              >*Start Date: <input type="date" name="come" required
             /></label>
+            <label
+              >*End Date: <input type="date" name="leave" required
+            /></label>
+            <fieldset class="select">
+              <legend>*Number of Room(s):</legend>
+              <label class="radio"
+                >One <input type="radio" name="rooms"
+              /></label>
+              <label class="radio"
+                >Two <input type="radio" name="rooms"
+              /></label>
+              <label class="radio"
+                >Three <input type="radio" name="rooms"
+              /></label>
+              <label class="radio"
+                >Four <input type="radio" name="rooms"
+              /></label>
+            </fieldset>
+            <fieldset class="select">
+              <legend>*Type of Rooms(s):</legend>
+              <label>1 Queen <input type="checkbox" name="1queen" /></label>
+              <label>2 Queen <input type="checkbox" name="2queen" /></label>
+              <label>Suite <input type="checkbox" name="suite" /></label>
+            </fieldset>
+            <label
+              >*First Name: <input type="text" name="first" required
+            /></label>
+            <label
+              >*Last Name: <input type="text" name="last" required
+            /></label>
+            <label
+              >*Email:
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@234.com"
+                required
+            /></label>
+            <label>*Tel: <input type="tel" name="tel" required /></label>
+            <label
+              >Home State/Country:
+              <input
+                type="text"
+                name="place"
+                placeholder="ie. Massachusetts, USA or Svalbard, Iceland"
+            /></label>
+            <label
+              >Special Accommodations/Comments:
+              <input type="text" name="comment"
+            /></label>
+            <input type="submit" name="btn" value="Reserve" />
           </fieldset>
-          <fieldset class="select">
-            <legend>*Type of Rooms(s):</legend>
-            <label>1 Queen <input type="checkbox" name="1queen" /></label>
-            <label>2 Queen <input type="checkbox" name="2queen" /></label>
-            <label>Suite <input type="checkbox" name="suite" /></label>
-          </fieldset>
-          <label
-            >*First Name: <input type="text" name="first" required
-          /></label>
-          <label>*Last Name: <input type="text" name="last" required /></label>
-          <label
-            >*Email:
-            <input
-              type="email"
-              name="email"
-              placeholder="someone@234.com"
-              required
-          /></label>
-          <label>*Tel: <input type="tel" name="tel" required /></label>
-          <label
-            >Home State/Country:
-            <input
-              type="text"
-              name="place"
-              placeholder="ie. Massachusetts, USA or Svalbard, Iceland"
-          /></label>
-          <label
-            >Special Accommodations/Comments: <input type="text" name="comment"
-          /></label>
-          <input type="submit" name="btn" value="Reserve" />
-        </fieldset>
-      </form>
-      <div class="imgs">
-        <img src="imgs/indoorPool.jpg" alt="room" width="100" height="100">
-        <img src="imgs/dcTemple.jpg" alt="room" width='960' height="652">
-        <img src="imgs/room.jpg" alt="room" width="480" height="226">
+        </form>
+        <div class="imgs">
+          <img src="imgs/indoorPool.jpg" alt="room" width="100" height="100" />
+          <img src="imgs/dcTemple.jpg" alt="room" width="960" height="652" />
+          <img src="imgs/mroom2.jpg" alt="room" width="480" height="226" />
+        </div>
       </div>
-    </div>
     </main>
     <footer>
       <div class="logo">
