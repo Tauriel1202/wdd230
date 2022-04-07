@@ -53,8 +53,28 @@ nav {
   }
 /*#endregion RESERVE*/
 /*#region MISSION*/
+.mission {
+  grid-column: 1 / 2;
+  margin-bottom: 3.5em;
+}
+.mission section {
+  display: block;
+}
+.missionImgs {
+  display: block;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  width: 20em;
+  margin: auto;
+}
+.formTitle, .bodyForm {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
 .bodyForm {
-    width: 100%;
+  margin: auto;
+  margin-top: 3.5em;
+  width: 97%;
   }
 /*#endregion MISSION*/
 /*#region FOOTER*/

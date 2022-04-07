@@ -9,10 +9,10 @@
   padding-left: 18%;
   bottom: 6em;
 }
-  .home {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
+.home {
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 1em;
 }
 .forecast {
   display: grid;
@@ -22,11 +22,21 @@
   grid-column: 1 / 4;
   padding: 2%;
 }
+.temple {
+  grid-row: 2 / 4;
+}
 .templeImg {
   padding: 1em;
 }
 .temple p {
   padding-bottom: 1.5em;
+}
+.homeContact {
+  grid-row: 2 / 3;
+}
+.currentWeather {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
 /*#endregion HOME*/
 /*#region TEMPLES*/
@@ -71,6 +81,11 @@ main {
 }
 .mission ul {
   grid-row: 2 / 3;
+}
+.missionImgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0.5em;
 }
 /*#endregion MISSION*/
 /*#region TY*/

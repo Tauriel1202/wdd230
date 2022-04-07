@@ -104,7 +104,7 @@ img {
     margin: 2% 0;
     border: 2px solid var(--accent2);
   }
-  .temple h3 {
+  .temple h3, .homeContact h3 {
     text-align: center;
     font-size: 1.25em;
     padding-top: 0.4em;
@@ -113,8 +113,11 @@ img {
     padding: 2%;
     border-bottom: 2px solid rgba(0,0,0,0.3);
   }
-  .temple p {
-    padding: 2% ;
+  .temple p, .homeContact p {
+    padding: 2% 3%;
+  }
+  .homeContact {
+    text-align: center;
   }
   .currentWeather {
     text-align: center;
@@ -239,7 +242,7 @@ img {
   border: 1px solid var(--accent1);
   border-radius: 10px;
   margin-bottom: 2em;
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 .moveTitle {
@@ -280,6 +283,10 @@ img {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   margin: 0 2%;
+}
+.missionImgs {
+  padding: 2%;
+  border-radius: 10px;
 }
 .formTitle {
   margin: 1em 0 0.1em;
